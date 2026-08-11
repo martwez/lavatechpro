@@ -56,10 +56,10 @@ export default function Services() {
               key={service.title}
               className="rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-[3px] hover:border-lava"
             >
-              <div className="mb-[14px] text-[1.8rem]">{service.icon}</div>
+              <div className="mb-[14px] text-[1.8rem]" aria-hidden="true">{service.icon}</div>
               <h3 className="mb-[10px] text-[1.2rem] font-bold">{service.title}</h3>
               <p className="mb-4 text-[0.95rem] text-text-dim">{service.description}</p>
-              <span className="inline-block rounded-md bg-[rgba(13,148,136,0.12)] px-3 py-[6px] text-[0.85rem] font-bold text-lava-light">
+              <span className="inline-block rounded-md bg-[rgba(29,78,216,0.1)] px-3 py-[6px] text-[0.85rem] font-bold text-lava-light">
                 {service.price}
               </span>
             </div>

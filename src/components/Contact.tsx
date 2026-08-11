@@ -26,15 +26,6 @@ export default function Contact() {
               </span>
               lavatechpro@gmail.com
             </a>
-            <a
-              href="#"
-              className="min-w-[180px] rounded-lg border border-border bg-bg px-[22px] py-[14px] text-[0.95rem] font-semibold transition-colors hover:border-lava-light"
-            >
-              <span className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
-                Facebook
-              </span>
-              Message on FB
-            </a>
           </div>
         </div>
       </div>

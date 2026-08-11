@@ -40,9 +40,9 @@ export default function ServiceArea() {
               key={fact.title}
               className={`flex gap-[14px] py-[14px] ${i < facts.length - 1 ? 'border-b border-border' : ''}`}
             >
-              <div className="text-[1.3rem]">{fact.icon}</div>
+              <div className="text-[1.3rem]" aria-hidden="true">{fact.icon}</div>
               <div>
-                <h4 className="mb-[3px] text-[0.95rem] font-bold">{fact.title}</h4>
+                <h3 className="mb-[3px] text-[0.95rem] font-bold">{fact.title}</h3>
                 <span className="text-[0.88rem] text-text-dim">{fact.detail}</span>
               </div>
             </div>
