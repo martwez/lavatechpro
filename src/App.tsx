@@ -10,8 +10,8 @@ export default function App() {
     <div className="bg-bg text-text leading-relaxed">
       <Header />
       <Hero />
-      <Services />
       <ServiceArea />
+      <Services />
       <Contact />
       <Footer />
     </div>
