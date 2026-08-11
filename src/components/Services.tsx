@@ -1,3 +1,5 @@
+import Reveal from './Reveal'
+
 const services = [
   {
     icon: '💻',
@@ -51,18 +53,22 @@ export default function Services() {
         </div>
 
         <div className="grid max-w-[1100px] grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-[22px]">
-          {services.map((service) => (
-            <div
-              key={service.title}
-              className="rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-[3px] hover:border-lava"
-            >
-              <div className="mb-[14px] text-[1.8rem]" aria-hidden="true">{service.icon}</div>
-              <h3 className="mb-[10px] text-[1.2rem] font-bold">{service.title}</h3>
-              <p className="mb-4 text-[0.95rem] text-text-dim">{service.description}</p>
-              <span className="inline-block rounded-md bg-[rgba(29,78,216,0.1)] px-3 py-[6px] text-[0.85rem] font-bold text-lava-light">
-                {service.price}
-              </span>
-            </div>
+          {services.map((service, i) => (
+            <Reveal key={service.title} delay={i * 80} className="h-full">
+              <div className="group h-full rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-[3px] hover:border-lava">
+                <div
+                  className="mb-[14px] text-[1.8rem] transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-110"
+                  aria-hidden="true"
+                >
+                  {service.icon}
+                </div>
+                <h3 className="mb-[10px] text-[1.2rem] font-bold">{service.title}</h3>
+                <p className="mb-4 text-[0.95rem] text-text-dim">{service.description}</p>
+                <span className="inline-block rounded-md bg-[rgba(29,78,216,0.1)] px-3 py-[6px] text-[0.85rem] font-bold text-lava-light">
+                  {service.price}
+                </span>
+              </div>
+            </Reveal>
           ))}
         </div>
       </div>

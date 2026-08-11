@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Logo from './Logo'
 
 const navLinks = [
@@ -9,9 +9,21 @@ const navLinks = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
-    <header className="sticky top-0 z-50 bg-[rgba(231,235,242,0.92)] backdrop-blur-[6px] border-b border-border">
+    <header
+      className={`sticky top-0 z-50 bg-[rgba(231,235,242,0.92)] backdrop-blur-[6px] border-b border-border transition-shadow duration-300 ${
+        scrolled ? 'shadow-[0_1px_12px_rgba(15,23,42,0.08)]' : ''
+      }`}
+    >
       <div className="flex items-center justify-between px-6 py-4 max-w-[1100px] mx-auto">
         <div className="flex items-center gap-2 text-[1.4rem] font-extrabold tracking-[0.5px]">
           <Logo />
@@ -52,7 +64,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="min-[701px]:hidden border-t border-border bg-bg px-6 py-4">
+        <div className="min-[701px]:hidden border-t border-border bg-bg px-6 py-4 animate-[menu-in_0.25s_ease-out_both]">
           <ul className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <li key={link.href}>

@@ -1,3 +1,5 @@
+import Reveal from './Reveal'
+
 const facts = [
   {
     icon: '📍',
@@ -20,7 +22,7 @@ export default function ServiceArea() {
   return (
     <section id="area" className="px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
       <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[1.1fr_0.9fr]">
-        <div>
+        <Reveal>
           <span className="mb-[10px] block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             Local &amp; Reliable
           </span>
@@ -33,8 +35,8 @@ export default function ServiceArea() {
           <p className="mb-4 text-text-dim">
             Right now I'm taking jobs Fridays and weekends. Book ahead to lock in a time, especially for install jobs that run a little longer.
           </p>
-        </div>
-        <div className="rounded-xl border border-border bg-card p-[26px]">
+        </Reveal>
+        <Reveal delay={150} className="rounded-xl border border-border bg-card p-[26px]">
           {facts.map((fact, i) => (
             <div
               key={fact.title}
@@ -47,7 +49,7 @@ export default function ServiceArea() {
               </div>
             </div>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   )

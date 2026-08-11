@@ -1,8 +1,10 @@
+import Reveal from './Reveal'
+
 export default function Contact() {
   return (
     <section id="contact" className="bg-bg-alt px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
       <div className="max-w-[1100px] mx-auto px-6">
-        <div className="mx-auto max-w-[650px] rounded-2xl border border-border bg-card p-[44px] text-center">
+        <Reveal className="mx-auto max-w-[650px] rounded-2xl border border-border bg-card p-[44px] text-center">
           <h2 className="mb-3 text-[1.8rem] font-extrabold">Let's get it fixed</h2>
           <p className="mb-7 text-text-dim">
             Reach out however's easiest — I'll get back to you same day when I can.
@@ -27,7 +29,7 @@ export default function Contact() {
               lavatechpro@gmail.com
             </a>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   )
