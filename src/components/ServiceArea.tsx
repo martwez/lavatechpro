@@ -2,7 +2,7 @@ const facts = [
   {
     icon: '📍',
     title: 'Service Area',
-    detail: 'Free travel within ~10 miles of Lava Hot Springs; mileage rate applies beyond that',
+    detail: 'Free travel within about 10 miles — a small mileage fee applies past that',
   },
   {
     icon: '🗓️',
@@ -12,7 +12,7 @@ const facts = [
   {
     icon: '🤝',
     title: 'How it Works',
-    detail: "Message or call, describe the job, get a straight answer on cost before anything's scheduled",
+    detail: "Message or call and tell me what's going on — I'll give you a straight answer on cost before we schedule anything",
   },
 ]
 
@@ -25,13 +25,13 @@ export default function ServiceArea() {
             Local &amp; Reliable
           </span>
           <h2 className="mb-[18px] text-[2rem] font-extrabold">
-            Based in Lava Hot Springs — not driving in from Pocatello
+            The tech guy next door
           </h2>
           <p className="mb-4 text-text-dim">
-            LavaTech Pro is a one-person operation, and that's on purpose. You get someone local, easy to reach, and easy to trust — not a call center or a rotating cast of technicians.
+            It's just me, and that's on purpose. You get someone local, easy to reach, and easy to trust — not a call center, not a rotating cast of technicians.
           </p>
           <p className="mb-4 text-text-dim">
-            Currently taking jobs Fridays and weekends. Book ahead to lock in a time, especially for install jobs that take a bit longer.
+            Right now I'm taking jobs Fridays and weekends. Book ahead to lock in a time, especially for install jobs that run a little longer.
           </p>
         </div>
         <div className="rounded-xl border border-border bg-card p-[26px]">

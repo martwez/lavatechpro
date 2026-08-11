@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #f3f5f8;
-  --color-bg-alt: #e7ebf1;
+  --color-bg: #e7ebf2;
+  --color-bg-alt: #d5dce6;
   --color-card: #ffffff;
   --color-lava: #1d4ed8;
-  --color-lava-light: #1e3a8a;
+  --color-lava-light: #17275c;
   --color-ember: #16a34a;
   --color-text: #0f172a;
-  --color-text-dim: #4b5563;
-  --color-border: #d6dce4;
+  --color-text-dim: #47505c;
+  --color-border: #c2cbd8;
 }
 
 body {

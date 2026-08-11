@@ -11,7 +11,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-[rgba(243,245,248,0.92)] backdrop-blur-[6px] border-b border-border">
+    <header className="sticky top-0 z-50 bg-[rgba(231,235,242,0.92)] backdrop-blur-[6px] border-b border-border">
       <div className="flex items-center justify-between px-6 py-4 max-w-[1100px] mx-auto">
         <div className="flex items-center gap-2 text-[1.4rem] font-extrabold tracking-[0.5px]">
           <Logo />

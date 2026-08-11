@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="border-b border-border bg-[radial-gradient(circle_at_30%_20%,#dbe4f2_0%,#f3f5f8_65%)] px-5 pt-[60px] pb-[50px] text-center min-[701px]:px-6 min-[701px]:pt-[90px] min-[701px]:pb-[80px]">
+    <section className="border-b border-border bg-[radial-gradient(circle_at_30%_20%,#cddaf0_0%,#e7ebf2_65%)] px-5 pt-[60px] pb-[50px] text-center min-[701px]:px-6 min-[701px]:pt-[90px] min-[701px]:pb-[80px]">
       <div className="max-w-[1100px] mx-auto px-6">
         <h1 className="mx-auto mb-[18px] max-w-[750px] text-[2.1rem] font-extrabold leading-[1.15] min-[701px]:text-[2.8rem]">
           Your local tech guy in <span className="text-lava-light">Lava Hot Springs</span>
@@ -24,7 +24,7 @@ export default function Hero() {
         </div>
         <div className="mt-11 flex flex-wrap justify-center gap-7 text-[0.9rem] text-text-dim">
           <div className="flex items-center gap-2">
-            <span className="h-[6px] w-[6px] rounded-full bg-lava-light" /> Serving Lava Hot Springs &amp; surrounding areas
+            <span className="h-[6px] w-[6px] rounded-full bg-lava-light" /> Free travel within 10 miles
           </div>
           <div className="flex items-center gap-2">
             <span className="h-[6px] w-[6px] rounded-full bg-lava-light" /> Available Fridays &amp; Weekends

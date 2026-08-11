@@ -3,7 +3,7 @@ const services = [
     icon: '💻',
     title: 'PC Help',
     description:
-      'Repairs, virus & malware cleanup, new computer setup, email/printer setup, basic tutoring, and home wifi/network troubleshooting.',
+      "Slow computer, a nasty virus, a new machine to set up — I can help. That covers email and printer setup, some basic tutoring, and getting your home wifi actually working.",
     price: 'Starting at $40',
   },
   {
@@ -17,14 +17,14 @@ const services = [
     icon: '📷',
     title: 'Security Camera Installs',
     description:
-      'Wireless security camera systems for homes and small properties, up to 4 cameras. Placement, mounting, and app setup included.',
+      "I'll set up a wireless camera system for your home or small property, up to 4 cameras. Placement, mounting, and getting the app working are all part of it.",
     price: 'Starting at $75/camera',
   },
   {
     icon: '🌐',
     title: 'Website Building',
     description:
-      'Simple, clean one-page websites for local businesses — name, services, contact info, and hours. Fast turnaround, no bloated templates.',
+      "I build simple, clean one-page websites for local businesses — your name, services, contact info, and hours. Fast turnaround, nothing bloated.",
     price: 'Starting at $400',
   },
   {
@@ -46,7 +46,7 @@ export default function Services() {
           </span>
           <h2 className="mb-3 text-[2rem] font-extrabold">Services</h2>
           <p className="text-[1.05rem] text-text-dim">
-            Straightforward tech help, priced fairly. Every job starts with a quick conversation — nothing gets booked without you knowing the cost first.
+            Straightforward tech help, priced fairly. Every job starts with a quick conversation — I won't book anything until you know what it'll cost.
           </p>
         </div>
 
