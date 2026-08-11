@@ -4,16 +4,22 @@ Marketing site for LavaTech Pro, a local tech services business in Lava Hot Spri
 
 ## Stack
 
-Plain static HTML/CSS — a single `index.html` file, no build step, no dependencies.
+Vite + React + TypeScript + Tailwind CSS.
 
 ## Develop
 
-Open `index.html` directly in a browser, or serve it locally:
+```
+npm install
+npm run dev
+```
+
+## Build
 
 ```
-python3 -m http.server 8000
+npm run build
+npm run preview
 ```
 
 ## Deploy
 
-Pushing to `main` triggers the GitHub Actions workflow in `.github/workflows/deploy.yml`, which publishes the site to GitHub Pages at the custom domain configured in `CNAME`.
+Pushing to `main` triggers the GitHub Actions workflow in `.github/workflows/deploy.yml`, which builds the site and publishes it to GitHub Pages at the custom domain configured in `public/CNAME`.
