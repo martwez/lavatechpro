@@ -34,7 +34,7 @@ export default function Contact() {
         <Reveal className="mx-auto max-w-[650px] rounded-2xl border border-border bg-card p-[44px] text-center">
           <h2 className="mb-3 text-[1.8rem] font-extrabold">Let's get it fixed</h2>
           <p className="mb-7 text-text-dim">
-            Reach out however's easiest — I'll get back to you same day when I can.
+            Reach out however's easiest — I'll get back to you soon.
           </p>
           <div className="mb-2 flex flex-wrap justify-center gap-[14px]">
             <a
@@ -65,7 +65,7 @@ export default function Contact() {
 
           {status === 'sent' ? (
             <p className="rounded-lg border border-lava bg-bg px-[22px] py-[18px] text-[0.95rem] font-semibold text-lava-light">
-              Got it — thanks! I'll get back to you same day when I can.
+              Got it — thanks! I'll get back to you soon.
             </p>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-3 text-left">
