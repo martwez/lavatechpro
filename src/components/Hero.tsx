@@ -4,10 +4,25 @@ import HeroBackdrop from './HeroBackdrop'
 // the illustrated backdrop below steps aside automatically and the scrim underneath keeps the text readable.
 const HERO_IMAGE = ''
 
+// Drop a video in public/videos and set this (e.g. '/videos/tubing.mp4') to use it as the hero
+// background instead — it takes priority over HERO_IMAGE, which is then used as its poster frame
+// while the video loads. Keep clips short (10-20s) and under a few MB so mobile stays fast.
+const HERO_VIDEO = ''
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-border bg-[radial-gradient(circle_at_30%_15%,#241f19_0%,#1c1a17_60%)] px-5 pt-[60px] pb-[50px] text-center min-[701px]:px-6 min-[701px]:pt-[90px] min-[701px]:pb-[80px]">
-      {HERO_IMAGE ? (
+      {HERO_VIDEO ? (
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          src={HERO_VIDEO}
+          poster={HERO_IMAGE || undefined}
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+      ) : HERO_IMAGE ? (
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${HERO_IMAGE})` }} />
       ) : (
         <HeroBackdrop />

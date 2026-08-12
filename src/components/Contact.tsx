@@ -1,6 +1,33 @@
+import { useState, type FormEvent } from 'react'
 import Reveal from './Reveal'
 
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/lavatechpro@gmail.com'
+
+const serviceOptions = ['PC Help', 'Starlink Setup', 'Security Cameras', 'Website Building', '3D Printing', 'Other']
+
+type Status = 'idle' | 'sending' | 'sent' | 'error'
+
 export default function Contact() {
+  const [status, setStatus] = useState<Status>('idle')
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    setStatus('sending')
+    const form = e.currentTarget
+    try {
+      const res = await fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { Accept: 'application/json' },
+        body: new FormData(form),
+      })
+      if (!res.ok) throw new Error('Request failed')
+      setStatus('sent')
+      form.reset()
+    } catch {
+      setStatus('error')
+    }
+  }
+
   return (
     <section id="contact" className="px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
       <div className="max-w-[1100px] mx-auto px-6">
@@ -29,6 +56,75 @@ export default function Contact() {
               lavatechpro@gmail.com
             </a>
           </div>
+
+          <div className="my-7 flex items-center gap-4 text-[0.8rem] font-semibold uppercase tracking-[1px] text-text-dim">
+            <span className="h-px flex-1 bg-border" />
+            or send details instead
+            <span className="h-px flex-1 bg-border" />
+          </div>
+
+          {status === 'sent' ? (
+            <p className="rounded-lg border border-lava bg-bg px-[22px] py-[18px] text-[0.95rem] font-semibold text-lava-light">
+              Got it — thanks! I'll get back to you same day when I can.
+            </p>
+          ) : (
+            <form onSubmit={handleSubmit} className="flex flex-col gap-3 text-left">
+              <input type="hidden" name="_subject" value="New request from LavaTech Pro site" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="true" />
+
+              <input
+                type="text"
+                name="Name"
+                placeholder="Your name"
+                required
+                className="rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
+              />
+              <input
+                type="text"
+                name="Phone or email"
+                placeholder="Best way to reach you (phone or email)"
+                required
+                className="rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
+              />
+              <select
+                name="Service"
+                defaultValue=""
+                required
+                className="rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text focus:border-lava-light focus:outline-none"
+              >
+                <option value="" disabled>
+                  What do you need help with?
+                </option>
+                {serviceOptions.map((s) => (
+                  <option key={s} value={s}>
+                    {s}
+                  </option>
+                ))}
+              </select>
+              <textarea
+                name="Message"
+                placeholder="What's going on? Any details help."
+                rows={4}
+                required
+                className="resize-none rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
+              />
+
+              <button
+                type="submit"
+                disabled={status === 'sending'}
+                className="mt-1 inline-block rounded-lg bg-ember px-[30px] py-[14px] text-base font-bold text-white transition-all hover:-translate-y-px hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {status === 'sending' ? 'Sending…' : 'Send request'}
+              </button>
+
+              {status === 'error' && (
+                <p className="text-[0.85rem] font-semibold text-ember">
+                  Something went wrong sending that — mind calling or texting instead?
+                </p>
+              )}
+            </form>
+          )}
         </Reveal>
       </div>
     </section>
