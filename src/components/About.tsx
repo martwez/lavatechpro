@@ -18,7 +18,7 @@ export default function About() {
           <p className="mb-4 text-text-dim">
             I've been the go-to tech person since I was about 15 — always the one fixing computers, routers, and
             random electronics for family and friends before it was ever a job. Ten years ago I moved out to the
-            Lava Hot Springs area for Idaho State University and graduated from the College of Technology. I never
+            Lava Hot Springs area to attend Idaho State University and graduated from the College of Technology. I never
             really left.
           </p>
           <p className="mb-6 text-text-dim">
