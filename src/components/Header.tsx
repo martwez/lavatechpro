@@ -54,7 +54,7 @@ export default function Header() {
           href="#contact"
           className="hidden min-[701px]:inline-block rounded-md bg-ember px-[18px] py-[10px] text-[0.9rem] font-bold text-white transition-all hover:brightness-110"
         >
-          Get a Quote
+          Reach Out
         </a>
 
         <button
@@ -88,7 +88,7 @@ export default function Header() {
                 onClick={() => setMenuOpen(false)}
                 className="inline-block rounded-md bg-ember px-[18px] py-[10px] text-[0.9rem] font-bold text-white hover:brightness-110"
               >
-                Get a Quote
+                Reach Out
               </a>
             </li>
           </ul>

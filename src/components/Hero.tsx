@@ -30,10 +30,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(16,15,13,0.55)_0%,rgba(16,15,13,0.3)_45%,rgba(16,15,13,0.8)_100%)]" />
       <div className="relative max-w-[1100px] mx-auto px-6">
         <h1 className="mx-auto mb-[18px] max-w-[750px] text-[2.1rem] font-extrabold leading-[1.15] min-[701px]:text-[2.8rem] animate-[fade-up_0.6s_ease-out_both]">
-          Your local tech guy in <span className="text-lava-light">Lava Hot Springs</span>
+          Your local tech guy, right here in <span className="text-lava-light">Lava Hot Springs</span>
         </h1>
         <p className="mx-auto mb-[34px] max-w-[600px] text-[1.15rem] text-text-dim animate-[fade-up_0.6s_ease-out_both] [animation-delay:120ms]">
-          Computer repair, Starlink setup, security cameras, websites, and 3D printing — from someone who actually lives here. No driving in from out of town, no waiting a week for a callback.
+          Computer repair, Starlink setup, security cameras, websites, and 3D printing — quick to schedule, no waiting a week for a callback.
         </p>
         <div className="flex flex-wrap justify-center gap-4 animate-[fade-up_0.6s_ease-out_both] [animation-delay:240ms]">
           <a

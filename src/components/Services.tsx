@@ -12,15 +12,15 @@ const services = [
     icon: '🛰️',
     title: 'Starlink Setup & Troubleshooting',
     description:
-      "Not sure if Starlink will even work at your property? I'll come test it. If it works, I'll handle the Starlink installation and configuration, and I'm your contact if anything needs troubleshooting after.",
+      "Not sure if Starlink will even work at your property? I'll come test it. If it works, I'll handle the Starlink installation and configuration, and I'm your contact for any troubleshooting after — billed as a standard visit, same as PC Help.",
     price: 'Free quote',
   },
   {
     icon: '📷',
     title: 'Security Camera Installs',
     description:
-      "I'll set up a wireless camera system for your home or small property, up to 4 cameras. Placement, mounting, and getting the app working are all part of it.",
-    price: 'Starting at $75/camera',
+      "Wireless or wired camera systems for your home or small property, up to 4 cameras. Placement, mounting, and getting the app working are all part of it — I'll quote it based on what you need.",
+    price: 'Free quote',
   },
   {
     icon: '🌐',
