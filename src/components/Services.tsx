@@ -5,14 +5,14 @@ const services = [
     icon: '💻',
     title: 'PC Help',
     description:
-      "Slow computer, a nasty virus, a new machine to set up — I can help. That covers email and printer setup, some basic tutoring, and getting your home wifi actually working.",
+      "Computer repair and IT support for the everyday stuff — a slow computer, a nasty virus, a new machine to set up. That covers email and printer setup, some basic tutoring, and getting your home wifi actually working.",
     price: 'Starting at $40',
   },
   {
     icon: '🛰️',
     title: 'Starlink Setup & Troubleshooting',
     description:
-      "Not sure if Starlink will even work at your property? I'll come test it. If it works, I'll install and configure it, and I'm your contact if anything needs troubleshooting after.",
+      "Not sure if Starlink will even work at your property? I'll come test it. If it works, I'll handle the Starlink installation and configuration, and I'm your contact if anything needs troubleshooting after.",
     price: 'Free quote',
   },
   {
