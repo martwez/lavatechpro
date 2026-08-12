@@ -1,5 +1,6 @@
 import Header from './components/Header'
 import Hero from './components/Hero'
+import About from './components/About'
 import Services from './components/Services'
 import ServiceArea from './components/ServiceArea'
 import Contact from './components/Contact'
@@ -10,6 +11,7 @@ export default function App() {
     <div className="bg-bg text-text leading-relaxed">
       <Header />
       <Hero />
+      <About />
       <ServiceArea />
       <Services />
       <Contact />

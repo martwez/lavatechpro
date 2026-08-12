@@ -1,10 +1,12 @@
 import Reveal from './Reveal'
+import PhotoPlaceholder from './PhotoPlaceholder'
 
 const facts = [
   {
     icon: '📍',
     title: 'Service Area',
-    detail: 'Free travel within about 10 miles — a small mileage fee applies past that',
+    detail:
+      'Free travel within about 10 miles of Lava Hot Springs. Beyond that, a small mileage fee covers Soda Springs, Bancroft, McCammon, Arimo, and the smaller towns around them — about a 30-mile loop.',
   },
   {
     icon: '🗓️',
@@ -21,7 +23,7 @@ const facts = [
 export default function ServiceArea() {
   return (
     <section id="area" className="px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
-      <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[1.1fr_0.9fr]">
+      <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[1fr_0.75fr_0.9fr]">
         <Reveal>
           <span className="mb-[10px] block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             Local &amp; Reliable
@@ -33,8 +35,11 @@ export default function ServiceArea() {
             It's just me, and that's on purpose. You get someone local, easy to reach, and easy to trust — not a call center, not a rotating cast of technicians.
           </p>
           <p className="mb-4 text-text-dim">
-            Right now I'm taking jobs Fridays and weekends. Book ahead to lock in a time, especially for install jobs that run a little longer.
+            Based in Lava Hot Springs and out on the road most Fridays and weekends, covering the smaller towns within about 30 miles too. Book ahead to lock in a time, especially for install jobs that run a little longer.
           </p>
+        </Reveal>
+        <Reveal delay={100}>
+          <PhotoPlaceholder label="Photo: on the job locally" className="h-full min-h-[220px]" />
         </Reveal>
         <Reveal delay={150} className="rounded-xl border border-border bg-card p-[26px]">
           {facts.map((fact, i) => (

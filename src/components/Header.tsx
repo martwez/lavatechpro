@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Logo from './Logo'
 
 const navLinks = [
+  { href: '#about', label: 'About' },
   { href: '#area', label: 'Service Area' },
   { href: '#services', label: 'Services' },
   { href: '#contact', label: 'Contact' },
@@ -20,14 +21,18 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-[rgba(231,235,242,0.92)] backdrop-blur-[6px] border-b border-border transition-shadow duration-300 ${
-        scrolled ? 'shadow-[0_1px_12px_rgba(15,23,42,0.08)]' : ''
+      className={`sticky top-0 z-50 bg-[rgba(28,26,23,0.9)] backdrop-blur-[6px] border-b border-border transition-shadow duration-300 ${
+        scrolled ? 'shadow-[0_1px_12px_rgba(0,0,0,0.35)]' : ''
       }`}
     >
-      <div className="flex items-center justify-between px-6 py-4 max-w-[1100px] mx-auto">
-        <div className="flex items-center gap-2 text-[1.4rem] font-extrabold tracking-[0.5px]">
-          <Logo />
-          <span className="text-lava-light">LavaTech Pro</span>
+      <div className="flex items-center justify-between px-6 py-3 max-w-[1100px] mx-auto">
+        <div className="flex items-center gap-3 text-[1.55rem] font-extrabold tracking-[0.5px]">
+          <Logo size={60} />
+          <span>
+            <span className="text-lava-light">Lava</span>
+            <span className="text-text">Tech</span>
+            <span className="text-lava-light"> Pro</span>
+          </span>
         </div>
 
         <nav className="hidden min-[701px]:block">
@@ -47,7 +52,7 @@ export default function Header() {
 
         <a
           href="#contact"
-          className="hidden min-[701px]:inline-block rounded-md bg-lava px-[18px] py-[10px] text-[0.9rem] font-bold text-white transition-colors hover:bg-lava-light"
+          className="hidden min-[701px]:inline-block rounded-md bg-ember px-[18px] py-[10px] text-[0.9rem] font-bold text-white transition-all hover:brightness-110"
         >
           Get a Quote
         </a>
@@ -81,7 +86,7 @@ export default function Header() {
               <a
                 href="#contact"
                 onClick={() => setMenuOpen(false)}
-                className="inline-block rounded-md bg-lava px-[18px] py-[10px] text-[0.9rem] font-bold text-white hover:bg-lava-light"
+                className="inline-block rounded-md bg-ember px-[18px] py-[10px] text-[0.9rem] font-bold text-white hover:brightness-110"
               >
                 Get a Quote
               </a>

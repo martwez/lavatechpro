@@ -1,18 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #e7ebf2;
-  --color-bg-alt: #d5dce6;
-  --color-card: #ffffff;
-  --color-lava: #1d4ed8;
-  --color-lava-light: #17275c;
-  --color-ember: #16a34a;
-  --color-text: #0f172a;
-  --color-text-dim: #47505c;
-  --color-border: #c2cbd8;
+  --color-bg: #1c1a17;
+  --color-bg-alt: #221f1a;
+  --color-card: #2b2723;
+  --color-lava: #5c6e4c;
+  --color-lava-light: #9db386;
+  --color-mineral: #6cb0af;
+  --color-ember: #e07a4c;
+  --color-text: #ece8e0;
+  --color-text-dim: #a8a196;
+  --color-border: #3a352e;
+  --color-ink: #100f0d;
+  --color-ink-text: #ece8e0;
 }
 
 body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  color-scheme: dark;
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
 
@@ -25,6 +31,31 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@keyframes ring-pulse {
+  0% {
+    transform: scale(0.2);
+    opacity: 0.9;
+    filter: drop-shadow(0 0 1px var(--color-ember));
+  }
+  55% {
+    filter: drop-shadow(0 0 6px var(--color-ember));
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.05);
+    opacity: 0;
+    filter: drop-shadow(0 0 10px var(--color-ember));
+  }
+}
+
+.logo-ring-pulse {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: ring-pulse 2s cubic-bezier(0.22, 0.61, 0.36, 1) infinite;
 }
 
 @keyframes menu-in {

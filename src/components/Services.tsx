@@ -64,7 +64,7 @@ export default function Services() {
                 </div>
                 <h3 className="mb-[10px] text-[1.2rem] font-bold">{service.title}</h3>
                 <p className="mb-4 text-[0.95rem] text-text-dim">{service.description}</p>
-                <span className="inline-block rounded-md bg-[rgba(29,78,216,0.1)] px-3 py-[6px] text-[0.85rem] font-bold text-lava-light">
+                <span className="inline-block rounded-md bg-[rgba(224,122,76,0.16)] px-3 py-[6px] text-[0.85rem] font-bold text-ember">
                   {service.price}
                 </span>
               </div>

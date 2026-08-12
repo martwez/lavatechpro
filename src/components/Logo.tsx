@@ -1,11 +1,31 @@
-export default function Logo() {
+export default function Logo({ size = 30 }: { size?: number }) {
   return (
-    <svg width="30" height="30" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle cx="16" cy="16" r="16" fill="#1d4ed8" />
-      <path d="M11 27 C9.5 22 12.5 20.5 11 17 C9.5 13.5 12.5 12 11 9" stroke="#ffffff" strokeWidth="2" fill="none" strokeLinecap="round" opacity="0.65" />
-      <path d="M16 27 C14.5 21 18 19 16 14 C14.5 10 18 7.5 16 4" stroke="#ffffff" strokeWidth="2" fill="none" strokeLinecap="round" />
-      <path d="M21 27 C19.5 22 22.5 20.5 21 17 C19.5 13.5 22.5 12 21 9" stroke="#ffffff" strokeWidth="2" fill="none" strokeLinecap="round" opacity="0.65" />
-      <circle cx="16" cy="4" r="1.4" fill="#ffffff" />
+    <svg width={size} height={size} viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <circle cx="50" cy="50" r="46" fill="none" stroke="var(--color-ember)" strokeWidth="3" opacity="0.3" />
+
+      <circle
+        className="logo-ring-pulse"
+        cx="50"
+        cy="50"
+        r="46"
+        fill="none"
+        stroke="var(--color-ember)"
+        strokeWidth="5"
+        style={{ animationDelay: '0s' }}
+      />
+
+      <circle cx="50" cy="50" r="23" fill="var(--color-lava)" stroke="var(--color-ember)" strokeWidth="2.5" />
+      <text
+        x="50"
+        y="59"
+        fontFamily="'Arial Narrow', 'Helvetica Neue', sans-serif"
+        fontWeight="800"
+        fontSize="21"
+        fill="var(--color-ink-text)"
+        textAnchor="middle"
+      >
+        LT
+      </text>
     </svg>
   )
 }
