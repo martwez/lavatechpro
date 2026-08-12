@@ -40,7 +40,7 @@ export default function Hero() {
             href="#contact"
             className="inline-block rounded-lg bg-ember px-[30px] py-[14px] text-base font-bold text-white transition-all hover:-translate-y-px hover:brightness-110"
           >
-            Book a House Call
+            Book a Visit
           </a>
           <a
             href="#services"
