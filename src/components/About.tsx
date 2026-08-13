@@ -5,7 +5,7 @@ const highlights = ['Doing tech work since age 15', 'ISU College of Technology g
 
 export default function About() {
   return (
-    <section id="about" className="px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
+    <section id="about" className="scroll-mt-[85px] px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
       <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[0.85fr_1.15fr]">
         <Reveal>
           <PhotoPlaceholder label="Photo: Me" className="h-full min-h-[260px]" />

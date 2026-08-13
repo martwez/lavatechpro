@@ -22,7 +22,7 @@ const facts = [
 
 export default function ServiceArea() {
   return (
-    <section id="area" className="px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
+    <section id="area" className="scroll-mt-[85px] px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
       <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[1fr_0.75fr_0.9fr]">
         <Reveal>
           <span className="mb-[10px] block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">

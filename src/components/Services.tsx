@@ -40,7 +40,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="bg-bg-alt px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
+    <section id="services" className="scroll-mt-[85px] bg-bg-alt px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
       <div className="max-w-[1100px] mx-auto px-6">
         <div className="mx-auto mb-12 max-w-[650px] text-center">
           <span className="mb-[10px] block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
@@ -64,7 +64,7 @@ export default function Services() {
                 </div>
                 <h3 className="mb-[10px] text-[1.2rem] font-bold">{service.title}</h3>
                 <p className="mb-4 text-[0.95rem] text-text-dim">{service.description}</p>
-                <span className="inline-block rounded-md bg-[rgba(224,122,76,0.16)] px-3 py-[6px] text-[0.85rem] font-bold text-ember">
+                <span className="inline-block rounded-md bg-ember px-3 py-[6px] text-[0.85rem] font-bold text-ink">
                   {service.price}
                 </span>
               </div>

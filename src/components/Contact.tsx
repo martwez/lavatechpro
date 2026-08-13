@@ -29,7 +29,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
+    <section id="contact" className="scroll-mt-[85px] px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
       <div className="max-w-[1100px] mx-auto px-6">
         <Reveal className="mx-auto max-w-[650px] rounded-2xl border border-border bg-card p-[44px] text-center">
           <h2 className="mb-3 text-[1.8rem] font-extrabold">Let's get it fixed</h2>
