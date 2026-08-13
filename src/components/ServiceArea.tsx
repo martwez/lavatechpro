@@ -26,14 +26,11 @@ export default function ServiceArea() {
       <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[1fr_0.75fr_0.9fr]">
         <Reveal>
           <span className="mb-[10px] block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
-            Local &amp; Reliable
+            Coverage &amp; Availability
           </span>
           <h2 className="mb-[18px] text-[2rem] font-extrabold">
-            The tech guy next door
+            Where and when I work
           </h2>
-          <p className="mb-4 text-text-dim">
-            It's just me, and that's on purpose. You get someone local, easy to reach, and easy to trust — not a call center, not a rotating cast of technicians.
-          </p>
           <p className="mb-4 text-text-dim">
             Based in Lava Hot Springs and out on the road most Fridays and weekends, covering the smaller towns within about 30 miles too. Book ahead to lock in a time, especially for install jobs that run a little longer.
           </p>
