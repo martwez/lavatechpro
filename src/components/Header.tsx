@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import Logo from './Logo'
 
 const navLinks = [
-  { href: '#about', label: 'About' },
-  { href: '#area', label: 'Service Area' },
   { href: '#services', label: 'Services' },
+  { href: '#area', label: 'Service Area' },
+  { href: '#about', label: 'About' },
   { href: '#contact', label: 'Contact' },
 ]
 

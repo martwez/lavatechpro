@@ -11,9 +11,9 @@ export default function App() {
     <div className="bg-bg text-text leading-relaxed">
       <Header />
       <Hero />
-      <About />
-      <ServiceArea />
       <Services />
+      <ServiceArea />
+      <About />
       <Contact />
       <Footer />
     </div>
