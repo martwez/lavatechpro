@@ -20,7 +20,7 @@ export default function About() {
             job. Now I'd like to extend that same help to the rest of my community.
           </p>
           <p className="mb-6 text-text-dim">
-            Ten years ago I moved to Lava Hot Springs and commuted to Pocatello for Idaho State University. I
+            Ten years ago I moved to Lava Hot Springs while I attended Idaho State University in Pocatello. I
             graduated from the College of Technology and never really left. These days I work as a systems
             administrator during the week, and LavaTech Pro is where that same hands-on troubleshooting goes to
             work for the neighbors and small businesses around here — done right the first time.
