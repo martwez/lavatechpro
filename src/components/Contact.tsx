@@ -73,21 +73,33 @@ export default function Contact() {
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="true" />
 
+              <label htmlFor="contact-name" className="sr-only">
+                Your name
+              </label>
               <input
+                id="contact-name"
                 type="text"
                 name="Name"
                 placeholder="Your name"
                 required
                 className="rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
               />
+              <label htmlFor="contact-reach" className="sr-only">
+                Best way to reach you (phone or email)
+              </label>
               <input
+                id="contact-reach"
                 type="text"
                 name="Phone or email"
                 placeholder="Best way to reach you (phone or email)"
                 required
                 className="rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
               />
+              <label htmlFor="contact-service" className="sr-only">
+                What do you need help with?
+              </label>
               <select
+                id="contact-service"
                 name="Service"
                 defaultValue=""
                 required
@@ -102,7 +114,11 @@ export default function Contact() {
                   </option>
                 ))}
               </select>
+              <label htmlFor="contact-message" className="sr-only">
+                What's going on? Any details help.
+              </label>
               <textarea
+                id="contact-message"
                 name="Message"
                 placeholder="What's going on? Any details help."
                 rows={4}
@@ -113,7 +129,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={status === 'sending'}
-                className="mt-1 inline-block rounded-lg bg-ember px-[30px] py-[14px] text-base font-bold text-white transition-all hover:-translate-y-px hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
+                className="mt-1 inline-block rounded-lg bg-ember px-[30px] py-[14px] text-base font-bold text-ink transition-all hover:-translate-y-px hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {status === 'sending' ? 'Sending…' : 'Send request'}
               </button>

@@ -52,7 +52,7 @@ export default function Header() {
 
         <a
           href="#contact"
-          className="hidden min-[701px]:inline-block rounded-md bg-ember px-[18px] py-[10px] text-[0.9rem] font-bold text-white transition-all hover:brightness-110"
+          className="hidden min-[701px]:inline-block rounded-md bg-ember px-[18px] py-[10px] text-[0.9rem] font-bold text-ink transition-all hover:brightness-110"
         >
           Reach Out
         </a>
@@ -86,7 +86,7 @@ export default function Header() {
               <a
                 href="#contact"
                 onClick={() => setMenuOpen(false)}
-                className="inline-block rounded-md bg-ember px-[18px] py-[10px] text-[0.9rem] font-bold text-white hover:brightness-110"
+                className="inline-block rounded-md bg-ember px-[18px] py-[10px] text-[0.9rem] font-bold text-ink hover:brightness-110"
               >
                 Reach Out
               </a>

@@ -16,7 +16,7 @@ const facts = [
   {
     icon: '🤝',
     title: 'How it Works',
-    detail: "Fill out the quick form (fastest way to reach me) or call/text — I'll give you a straight answer on cost before we schedule anything",
+    detail: 'Fill out the quick form (fastest way to reach me) or call/text — happy to talk through what you need before anything is scheduled.',
   },
 ]
 

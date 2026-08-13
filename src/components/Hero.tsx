@@ -38,7 +38,7 @@ export default function Hero() {
         <div className="flex flex-wrap justify-center gap-4 animate-[fade-up_0.6s_ease-out_both] [animation-delay:240ms]">
           <a
             href="#contact"
-            className="inline-block rounded-lg bg-ember px-[30px] py-[14px] text-base font-bold text-white transition-all hover:-translate-y-px hover:brightness-110"
+            className="inline-block rounded-lg bg-ember px-[30px] py-[14px] text-base font-bold text-ink transition-all hover:-translate-y-px hover:brightness-110"
           >
             Book a Visit
           </a>
