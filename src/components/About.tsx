@@ -14,11 +14,10 @@ export default function About() {
           <span className="mb-[10px] block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             About Me
           </span>
-          <h2 className="mb-[18px] text-[2rem] font-extrabold">Hi, I'm the person behind LavaTech Pro</h2>
+          <h2 className="mb-[18px] text-[2rem] font-extrabold">The go-to IT guy</h2>
           <p className="mb-4 text-text-dim">
-            I've always been the go-to IT help for friends and family — fixing computers, routers, and random
-            electronics since I was about 15, long before it was ever a job. Now I'd like to extend that same help
-            to the rest of my community.
+            Fixing computers, routers, and random electronics for friends and family — long before it was ever a
+            job. Now I'd like to extend that same help to the rest of my community.
           </p>
           <p className="mb-6 text-text-dim">
             Ten years ago I moved to Lava Hot Springs and commuted to Pocatello for Idaho State University. I
