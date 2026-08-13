@@ -8,23 +8,23 @@ export default function About() {
     <section id="about" className="px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
       <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[0.85fr_1.15fr]">
         <Reveal>
-          <PhotoPlaceholder label="Photo: Adolfo" className="h-full min-h-[260px]" />
+          <PhotoPlaceholder label="Photo: Me" className="h-full min-h-[260px]" />
         </Reveal>
         <Reveal delay={100}>
           <span className="mb-[10px] block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             About Me
           </span>
-          <h2 className="mb-[18px] text-[2rem] font-extrabold">Hi, I'm Adolfo Martinez</h2>
+          <h2 className="mb-[18px] text-[2rem] font-extrabold">Hi, I'm the person behind LavaTech Pro</h2>
           <p className="mb-4 text-text-dim">
-            I've been the go-to tech person since I was about 15 — always the one fixing computers, routers, and
-            random electronics for family and friends before it was ever a job. Ten years ago I moved to Lava Hot
-            Springs and commuted to Pocatello for Idaho State University. I graduated from the College of Technology
-            and never really left.
+            I've always been the go-to IT help for friends and family — fixing computers, routers, and random
+            electronics since I was about 15, long before it was ever a job. Now I'd like to extend that same help
+            to the rest of my community.
           </p>
           <p className="mb-6 text-text-dim">
-            These days I work as a systems administrator during the week, and LavaTech Pro is where that same
-            hands-on troubleshooting goes to work for the neighbors and small businesses around here — done right
-            the first time.
+            Ten years ago I moved to Lava Hot Springs and commuted to Pocatello for Idaho State University. I
+            graduated from the College of Technology and never really left. These days I work as a systems
+            administrator during the week, and LavaTech Pro is where that same hands-on troubleshooting goes to
+            work for the neighbors and small businesses around here — done right the first time.
           </p>
           <div className="flex flex-wrap gap-x-7 gap-y-2 text-[0.9rem] text-text-dim">
             {highlights.map((item) => (
