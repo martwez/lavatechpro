@@ -1,8 +1,7 @@
-# Internal business notes — not published to the public repo/site
-LavaTech Pro - Pricing Sheet.md
-LavaTech Pro - Launch Checklist.md
-LavaTech Pro - Claude Code Handoff Prompt.md
-LavaTech Pro - Legal Setup Guide.md
+# Internal business notes — not published to the public repo/site.
+# Whole directory ignored (not individual filenames) so any file saved in
+# here, under any name or extension, is excluded automatically.
+private/
 
 .claude/
 .DS_Store

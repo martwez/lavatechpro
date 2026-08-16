@@ -33,4 +33,4 @@ Push to `main` → GitHub Actions (`.github/workflows/deploy.yml`) runs `npm ci 
 
 ## Not tracked in this repo
 
-Internal business docs (pricing rationale, launch checklist, legal setup notes) are kept in the working folder but excluded via `.gitignore` — this repo is public and those aren't meant to be.
+Internal business docs (pricing rationale, launch checklist, legal setup notes, job tracker, invoice template/history) live in `private/`, which is excluded as a whole directory via `.gitignore` — this repo is public and those aren't meant to be. Any file saved into `private/`, regardless of name or extension, is automatically excluded; never move business files back to the repo root.
