@@ -1,36 +1,37 @@
 import Reveal from './Reveal'
+import { PcHelpIcon, StarlinkIcon, CameraIcon, WebsiteIcon, Printer3DIcon } from './ServiceIcons'
 
 const services = [
   {
-    icon: '💻',
+    Icon: PcHelpIcon,
     title: 'PC Help',
     description:
       "Computer repair and IT support for the everyday stuff — a slow computer, a nasty virus, a new machine to set up. That covers email and printer setup, some basic tutoring, and getting your home wifi actually working.",
     price: 'Starting at $40',
   },
   {
-    icon: '🛰️',
+    Icon: StarlinkIcon,
     title: 'Starlink Setup & Troubleshooting',
     description:
       "Not sure if Starlink will even work at your property? I'll come test it. If it works, I'll handle the Starlink installation and configuration, and I'm your contact for any troubleshooting after — billed as a standard visit, same as PC Help.",
     price: 'Free quote',
   },
   {
-    icon: '📷',
+    Icon: CameraIcon,
     title: 'Security Camera Installs',
     description:
       "Wireless or wired camera systems for your home or small property, up to 4 cameras. Placement, mounting, and getting the app working are all part of it — I'll quote it based on what you need.",
     price: 'Free quote',
   },
   {
-    icon: '🌐',
+    Icon: WebsiteIcon,
     title: 'Website Building',
     description:
       "I build simple, clean one-page websites for local businesses — your name, services, contact info, and hours. Fast turnaround, nothing bloated.",
     price: 'Starting at $400',
   },
   {
-    icon: '🖨️',
+    Icon: Printer3DIcon,
     title: '3D Printing',
     description:
       "Custom prints, replacement parts, prototypes, and small-batch projects. Send me what you need and I'll let you know what's possible.",
@@ -56,11 +57,8 @@ export default function Services() {
           {services.map((service, i) => (
             <Reveal key={service.title} delay={i * 80} className="h-full">
               <div className="group h-full rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-[3px] hover:border-lava">
-                <div
-                  className="mb-[14px] text-[1.8rem] transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-110"
-                  aria-hidden="true"
-                >
-                  {service.icon}
+                <div className="mb-[16px] flex h-14 w-14 items-center justify-center rounded-lg bg-bg-alt text-lava-light transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-110">
+                  <service.Icon className="h-8 w-8" />
                 </div>
                 <h3 className="mb-[10px] text-[1.2rem] font-bold">{service.title}</h3>
                 <p className="mb-4 text-[0.95rem] text-text-dim">{service.description}</p>
