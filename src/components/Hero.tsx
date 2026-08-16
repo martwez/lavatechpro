@@ -27,7 +27,7 @@ export default function Hero() {
       ) : (
         <HeroBackdrop />
       )}
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(16,15,13,0.72)_0%,rgba(16,15,13,0.6)_45%,rgba(16,15,13,0.87)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(16,15,13,0.4)_0%,rgba(16,15,13,0.26)_45%,rgba(16,15,13,0.58)_100%)]" />
       <div className="relative max-w-[1100px] mx-auto px-6">
         <h1 className="mx-auto mb-[18px] max-w-[750px] text-[2.1rem] font-extrabold leading-[1.15] [text-shadow:0_1px_3px_rgba(0,0,0,0.9),0_4px_18px_rgba(0,0,0,0.6)] min-[701px]:text-[2.8rem] animate-[fade-up_0.6s_ease-out_both]">
           Your local tech guy, right here in <span className="text-lava-light">Lava Hot Springs</span>
@@ -44,7 +44,7 @@ export default function Hero() {
           </a>
           <a
             href="#services"
-            className="inline-block rounded-lg border-[1.5px] border-border px-[30px] py-[14px] text-base font-bold text-text transition-colors hover:border-lava-light hover:text-lava-light"
+            className="inline-block rounded-lg border-[1.5px] border-white/30 bg-black/25 px-[30px] py-[14px] text-base font-bold text-text backdrop-blur-sm transition-colors hover:border-lava-light hover:bg-black/40 hover:text-lava-light"
           >
             See Services
           </a>
