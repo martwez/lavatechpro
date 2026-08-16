@@ -44,7 +44,7 @@ export default function Hero() {
           </a>
           <a
             href="#services"
-            className="inline-block rounded-lg border-[1.5px] border-white/30 bg-black/25 px-[30px] py-[14px] text-base font-bold text-text backdrop-blur-sm transition-colors hover:border-lava-light hover:bg-black/40 hover:text-lava-light"
+            className="inline-block rounded-lg border-[1.5px] border-border bg-ink px-[30px] py-[14px] text-base font-bold text-text transition-colors hover:border-lava-light hover:text-lava-light"
           >
             See Services
           </a>
