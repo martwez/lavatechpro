@@ -20,6 +20,17 @@ export function PcHelpIcon({ className }: IconProps) {
   )
 }
 
+export function PhoneHelpIcon({ className }: IconProps) {
+  return (
+    <svg {...shared} className={className} aria-hidden="true">
+      <rect x="6" y="9" width="22" height="30" rx="3" />
+      <path d="M13 15h8" strokeWidth="1.8" />
+      <rect x="24" y="19" width="15" height="25" rx="3" fill="var(--color-bg-alt)" />
+      <circle cx="31.5" cy="40" r="1.3" fill="currentColor" stroke="none" />
+    </svg>
+  )
+}
+
 export function StarlinkIcon({ className }: IconProps) {
   return (
     <svg {...shared} className={className} aria-hidden="true">

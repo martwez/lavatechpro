@@ -1,5 +1,5 @@
 import Reveal from './Reveal'
-import { PcHelpIcon, StarlinkIcon, CameraIcon, WebsiteIcon, Printer3DIcon } from './ServiceIcons'
+import { PcHelpIcon, PhoneHelpIcon, StarlinkIcon, CameraIcon, WebsiteIcon, Printer3DIcon } from './ServiceIcons'
 
 const services = [
   {
@@ -7,6 +7,13 @@ const services = [
     title: 'PC Help',
     description:
       "Computer repair and IT support for the everyday stuff — a slow computer, a nasty virus, a new machine to set up. That covers email and printer setup, some basic tutoring, and getting your home wifi actually working.",
+    price: 'Starting at $40',
+  },
+  {
+    Icon: PhoneHelpIcon,
+    title: 'Phone & Tablet Help',
+    description:
+      "Patient, one-on-one help with smartphones and tablets — texting, video calls with family, photos, apps, or just getting comfortable with a new device. Especially popular with older residents, but open to anyone who'd rather have a person walk them through it than a manual.",
     price: 'Starting at $40',
   },
   {
