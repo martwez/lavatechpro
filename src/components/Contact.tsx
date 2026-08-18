@@ -1,4 +1,4 @@
-import { useState, type FormEvent } from 'react'
+import { useEffect, useRef, useState, type FormEvent } from 'react'
 import Reveal from './Reveal'
 
 const FORM_ENDPOINT = 'https://formsubmit.co/ajax/lavatechpro@gmail.com'
@@ -9,6 +9,18 @@ type Status = 'idle' | 'sending' | 'sent' | 'error'
 
 export default function Contact() {
   const [status, setStatus] = useState<Status>('idle')
+  const emailRef = useRef<HTMLInputElement>(null)
+  const phoneRef = useRef<HTMLInputElement>(null)
+
+  function syncReachValidity() {
+    const email = emailRef.current?.value.trim() ?? ''
+    const phone = phoneRef.current?.value.trim() ?? ''
+    phoneRef.current?.setCustomValidity(email || phone ? '' : 'Enter an email address or a phone number')
+  }
+
+  useEffect(() => {
+    syncReachValidity()
+  }, [])
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -84,19 +96,38 @@ export default function Contact() {
                 required
                 className="rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
               />
-              <label htmlFor="contact-reach" className="sr-only">
-                Best way to reach you (phone or email)
-              </label>
-              <input
-                id="contact-reach"
-                type="text"
-                name="Phone or email"
-                placeholder="Best way to reach you (phone or email)"
-                required
-                pattern="([^\s@]+@[^\s@]+\.[^\s@]+)|(\+?1?[ .\-]?\(?\d{3}\)?[ .\-]?\d{3}[ .\-]?\d{4})"
-                title="Enter a valid email address or a 10-digit phone number"
-                className="rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
-              />
+              <div className="grid grid-cols-1 gap-3 min-[701px]:grid-cols-2">
+                <div>
+                  <label htmlFor="contact-email" className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
+                    Email
+                  </label>
+                  <input
+                    id="contact-email"
+                    ref={emailRef}
+                    type="email"
+                    name="Email"
+                    placeholder="john.doe@gmail.com"
+                    onChange={syncReachValidity}
+                    className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="contact-phone" className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
+                    Phone Number
+                  </label>
+                  <input
+                    id="contact-phone"
+                    ref={phoneRef}
+                    type="tel"
+                    name="Phone"
+                    placeholder="(123) 456 7890"
+                    pattern="\+?1?[ .\-]?\(?\d{3}\)?[ .\-]?\d{3}[ .\-]?\d{4}"
+                    title="Enter a valid 10-digit phone number"
+                    onChange={syncReachValidity}
+                    className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
+                  />
+                </div>
+              </div>
               <label htmlFor="contact-service" className="sr-only">
                 What do you need help with?
               </label>
