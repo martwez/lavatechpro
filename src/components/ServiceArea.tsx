@@ -6,7 +6,7 @@ const facts = [
     icon: '📍',
     title: 'Service Area',
     detail:
-      'Free travel within about 10 miles of Lava Hot Springs. Beyond that, a flat $25 trip fee covers Soda Springs, Bancroft, McCammon, Arimo, and the smaller towns around them — about a 30-mile loop. Waived on jobs running 2 hours or longer.',
+      'Free travel within about 10 miles of Lava Hot Springs. Beyond that, a small travel fee based on distance — included in your quote — covers Soda Springs, Bancroft, McCammon, Arimo, and other towns around them, about a 30-mile loop.',
   },
   {
     icon: '🗓️',
@@ -32,7 +32,7 @@ export default function ServiceArea() {
             Where and when I work
           </h2>
           <p className="mb-4 text-text-dim">
-            Based in Lava Hot Springs and out on the road most Fridays and weekends, covering the smaller towns within about 30 miles too. Book ahead to lock in a time, especially for install jobs that run a little longer.
+            Based in Lava Hot Springs and out on the road most Fridays and weekends, covering other nearby towns too. Book ahead to lock in a time, especially for install jobs that run a little longer.
           </p>
         </Reveal>
         <Reveal delay={100}>
