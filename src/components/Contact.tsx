@@ -85,17 +85,19 @@ export default function Contact() {
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="true" />
 
-              <label htmlFor="contact-name" className="sr-only">
-                Your name
-              </label>
-              <input
-                id="contact-name"
-                type="text"
-                name="Name"
-                placeholder="Your name"
-                required
-                className="rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
-              />
+              <div>
+                <label htmlFor="contact-name" className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
+                  Name
+                </label>
+                <input
+                  id="contact-name"
+                  type="text"
+                  name="Name"
+                  placeholder="Your name"
+                  required
+                  className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
+                />
+              </div>
               <div className="grid grid-cols-1 gap-3 min-[701px]:grid-cols-2">
                 <div>
                   <label htmlFor="contact-email" className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
@@ -128,36 +130,40 @@ export default function Contact() {
                   />
                 </div>
               </div>
-              <label htmlFor="contact-service" className="sr-only">
-                What do you need help with?
-              </label>
-              <select
-                id="contact-service"
-                name="Service"
-                defaultValue=""
-                required
-                className="rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text focus:border-lava-light focus:outline-none"
-              >
-                <option value="" disabled>
-                  What do you need help with?
-                </option>
-                {serviceOptions.map((s) => (
-                  <option key={s} value={s}>
-                    {s}
+              <div>
+                <label htmlFor="contact-service" className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
+                  Service
+                </label>
+                <select
+                  id="contact-service"
+                  name="Service"
+                  defaultValue=""
+                  required
+                  className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text focus:border-lava-light focus:outline-none"
+                >
+                  <option value="" disabled>
+                    What do you need help with?
                   </option>
-                ))}
-              </select>
-              <label htmlFor="contact-message" className="sr-only">
-                What's going on? Any details help.
-              </label>
-              <textarea
-                id="contact-message"
-                name="Message"
-                placeholder="What's going on? Any details help."
-                rows={4}
-                required
-                className="resize-none rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
-              />
+                  {serviceOptions.map((s) => (
+                    <option key={s} value={s}>
+                      {s}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div>
+                <label htmlFor="contact-message" className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
+                  Message
+                </label>
+                <textarea
+                  id="contact-message"
+                  name="Message"
+                  placeholder="What's going on? Any details help."
+                  rows={4}
+                  required
+                  className="w-full resize-none rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
+                />
+              </div>
 
               <button
                 type="submit"
