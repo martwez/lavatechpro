@@ -93,6 +93,8 @@ export default function Contact() {
                 name="Phone or email"
                 placeholder="Best way to reach you (phone or email)"
                 required
+                pattern="([^\s@]+@[^\s@]+\.[^\s@]+)|(\+?1?[ .\-]?\(?\d{3}\)?[ .\-]?\d{3}[ .\-]?\d{4})"
+                title="Enter a valid email address or a 10-digit phone number"
                 className="rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
               />
               <label htmlFor="contact-service" className="sr-only">
