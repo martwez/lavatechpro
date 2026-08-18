@@ -63,15 +63,18 @@ export default function Services() {
         <div className="grid max-w-[1100px] grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-[22px]">
           {services.map((service, i) => (
             <Reveal key={service.title} delay={i * 80} className="h-full">
-              <div className="group h-full rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-[3px] hover:border-lava">
+              <div className="group flex h-full flex-col rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-[3px] hover:border-lava">
                 <div className="mb-[16px] flex h-14 w-14 items-center justify-center rounded-lg bg-bg-alt text-lava-light transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-110">
                   <service.Icon className="h-8 w-8" />
                 </div>
                 <h3 className="mb-[10px] text-[1.2rem] font-bold">{service.title}</h3>
                 <p className="mb-4 text-[0.95rem] text-text-dim">{service.description}</p>
-                <span className="inline-block rounded-md bg-ember px-3 py-[6px] text-[0.85rem] font-bold text-ink">
+                <a
+                  href="#contact"
+                  className="mt-auto inline-block w-fit rounded-md bg-ember px-3 py-[6px] text-[0.85rem] font-bold text-ink transition-all hover:brightness-110"
+                >
                   {service.price}
-                </span>
+                </a>
               </div>
             </Reveal>
           ))}
