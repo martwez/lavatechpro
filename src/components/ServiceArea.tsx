@@ -1,5 +1,4 @@
 import Reveal from './Reveal'
-import PhotoPlaceholder from './PhotoPlaceholder'
 
 const facts = [
   {
@@ -23,7 +22,7 @@ const facts = [
 export default function ServiceArea() {
   return (
     <section id="area" className="scroll-mt-[85px] px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
-      <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[1fr_0.75fr_0.9fr]">
+      <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[0.9fr_1.1fr_0.9fr]">
         <Reveal>
           <span className="mb-[10px] block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             Coverage &amp; Availability
@@ -36,7 +35,11 @@ export default function ServiceArea() {
           </p>
         </Reveal>
         <Reveal delay={100}>
-          <PhotoPlaceholder label="Photo: on the job locally" className="h-full min-h-[220px]" />
+          <img
+            src="/images/on-the-job.jpg"
+            alt="On the job locally"
+            className="h-full min-h-[340px] w-full rounded-xl border border-border object-cover"
+          />
         </Reveal>
         <Reveal delay={150} className="rounded-xl border border-border bg-card p-[26px]">
           {facts.map((fact, i) => (
