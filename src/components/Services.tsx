@@ -35,7 +35,7 @@ const services = [
     title: 'Website Building',
     description:
       "I build simple, clean one-page websites for local businesses — your name, services, contact info, and hours. Fast turnaround, nothing bloated.",
-    price: 'Starting at $400',
+    price: 'Starting at $500',
   },
   {
     Icon: Printer3DIcon,
