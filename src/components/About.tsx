@@ -1,5 +1,4 @@
 import Reveal from './Reveal'
-import PhotoPlaceholder from './PhotoPlaceholder'
 
 const highlights = ['Doing tech work since age 15', 'ISU College of Technology grad', '10 years in the Lava area']
 
@@ -8,7 +7,11 @@ export default function About() {
     <section id="about" className="scroll-mt-[85px] px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
       <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[0.85fr_1.15fr]">
         <Reveal>
-          <PhotoPlaceholder label="Photo: Me" className="h-full min-h-[260px]" />
+          <img
+            src="/images/about-me.jpg"
+            alt="Me, out in the hills near Lava Hot Springs"
+            className="aspect-[4/5] w-full rounded-xl border border-border object-cover"
+          />
         </Reveal>
         <Reveal delay={100}>
           <span className="mb-[10px] block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
