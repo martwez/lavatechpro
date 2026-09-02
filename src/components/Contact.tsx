@@ -43,7 +43,7 @@ export default function Contact() {
   return (
     <section id="contact" className="scroll-mt-[85px] px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
       <div className="max-w-[1100px] mx-auto px-6">
-        <Reveal className="mx-auto max-w-[650px] rounded-2xl border border-border bg-card p-[44px] text-center">
+        <Reveal className="mx-auto max-w-[650px] rounded-2xl border border-border bg-card px-[26px] py-[38px] text-center min-[701px]:p-[44px]">
           <h2 className="mb-3 text-[1.8rem] font-extrabold">Let's get it fixed</h2>
           <p className="mb-7 text-text-dim">
             Reach out however's easiest, I'll get back to you soon.
@@ -80,13 +80,13 @@ export default function Contact() {
               Got it, thanks! I'll get back to you soon.
             </p>
           ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col gap-3 text-left">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-5 text-left">
               <input type="hidden" name="_subject" value="New request from LavaTech Pro site" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="true" />
 
               <div>
-                <label htmlFor="contact-name" className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
+                <label htmlFor="contact-name" className="mb-2 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
                   Name
                 </label>
                 <input
@@ -95,12 +95,12 @@ export default function Contact() {
                   name="Name"
                   placeholder="Your name"
                   required
-                  className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
+                  className="w-full rounded-lg border border-border bg-bg px-[18px] py-[14px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
                 />
               </div>
-              <div className="grid grid-cols-1 gap-3 min-[701px]:grid-cols-2">
+              <div className="grid grid-cols-1 gap-5 min-[701px]:grid-cols-2">
                 <div>
-                  <label htmlFor="contact-email" className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
+                  <label htmlFor="contact-email" className="mb-2 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
                     Email
                   </label>
                   <input
@@ -110,11 +110,11 @@ export default function Contact() {
                     name="Email"
                     placeholder="john.doe@gmail.com"
                     onChange={syncReachValidity}
-                    className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
+                    className="w-full rounded-lg border border-border bg-bg px-[18px] py-[14px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
                   />
                 </div>
                 <div>
-                  <label htmlFor="contact-phone" className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
+                  <label htmlFor="contact-phone" className="mb-2 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
                     Phone Number
                   </label>
                   <input
@@ -126,12 +126,12 @@ export default function Contact() {
                     pattern="\+?1?[ .\-]?\(?\d{3}\)?[ .\-]?\d{3}[ .\-]?\d{4}"
                     title="Enter a valid 10-digit phone number"
                     onChange={syncReachValidity}
-                    className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
+                    className="w-full rounded-lg border border-border bg-bg px-[18px] py-[14px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
                   />
                 </div>
               </div>
               <div>
-                <label htmlFor="contact-service" className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
+                <label htmlFor="contact-service" className="mb-2 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
                   Service
                 </label>
                 <select
@@ -139,7 +139,7 @@ export default function Contact() {
                   name="Service"
                   defaultValue=""
                   required
-                  className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text focus:border-mineral focus:outline-none"
+                  className="w-full rounded-lg border border-border bg-bg px-[18px] py-[14px] text-[0.95rem] text-text focus:border-mineral focus:outline-none"
                 >
                   <option value="" disabled>
                     What do you need help with?
@@ -152,7 +152,7 @@ export default function Contact() {
                 </select>
               </div>
               <div>
-                <label htmlFor="contact-message" className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
+                <label htmlFor="contact-message" className="mb-2 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
                   Message
                 </label>
                 <textarea
@@ -161,7 +161,7 @@ export default function Contact() {
                   placeholder="What's going on? Any details help."
                   rows={4}
                   required
-                  className="w-full resize-none rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
+                  className="w-full resize-none rounded-lg border border-border bg-bg px-[18px] py-[14px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
                 />
               </div>
 
