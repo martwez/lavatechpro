@@ -19,14 +19,14 @@ export default function About() {
           </span>
           <h2 className="mb-[18px] text-[2rem] font-extrabold">The go-to IT guy</h2>
           <p className="mb-4 text-text-dim">
-            Fixing computers, routers, and random electronics for friends and family — long before it was ever a
+            Fixing computers, routers, and random electronics for friends and family, long before it was ever a
             job. Now I'd like to extend that same help to the rest of my community.
           </p>
           <p className="mb-6 text-text-dim">
             Ten years ago I moved to Lava Hot Springs while I attended Idaho State University in Pocatello. I
             graduated from the College of Technology and never really left. These days I work as a systems
             administrator during the week, and LavaTech Pro is where that same hands-on troubleshooting goes to
-            work for the neighbors and small businesses around here — done right the first time.
+            work for the neighbors and small businesses around here, done right the first time.
           </p>
           <div className="flex flex-wrap gap-x-7 gap-y-2 text-[0.9rem] text-text-dim">
             {highlights.map((item) => (

@@ -1,11 +1,11 @@
 import HeroBackdrop from './HeroBackdrop'
 
-// Drop the photo in public/images and set this (e.g. '/images/l-mountain.jpg') to swap it in —
-// the illustrated backdrop below steps aside automatically and the scrim underneath keeps the text readable.
+// Drop the photo in public/images and set this (e.g. '/images/l-mountain.jpg') to swap it in.
+// The illustrated backdrop below steps aside automatically and the scrim underneath keeps the text readable.
 const HERO_IMAGE = '/images/l-mountain.jpg'
 
 // Drop a video in public/videos and set this (e.g. '/videos/tubing.mp4') to use it as the hero
-// background instead — it takes priority over HERO_IMAGE, which is then used as its poster frame
+// background instead. It takes priority over HERO_IMAGE, which is then used as its poster frame
 // while the video loads. Keep clips short (10-20s) and under a few MB so mobile stays fast.
 const HERO_VIDEO = ''
 
@@ -33,7 +33,7 @@ export default function Hero() {
           Your local tech guy, right here in <span className="text-lava-light">Lava Hot Springs</span>
         </h1>
         <p className="mx-auto mb-[34px] max-w-[600px] text-[1.15rem] text-[#e4e0d6] [text-shadow:0_1px_3px_rgba(0,0,0,0.9),0_2px_10px_rgba(0,0,0,0.6)] animate-[fade-up_0.6s_ease-out_both] [animation-delay:120ms]">
-          Computer repair, Starlink setup, security cameras, websites, and 3D printing — quick to schedule, no waiting a week for a callback.
+          Computer repair, Starlink setup, security cameras, websites, and 3D printing. Quick to schedule, no waiting a week for a callback.
         </p>
         <div className="flex flex-wrap justify-center gap-4 animate-[fade-up_0.6s_ease-out_both] [animation-delay:240ms]">
           <a

@@ -6,35 +6,35 @@ const services = [
     Icon: PcHelpIcon,
     title: 'PC Help',
     description:
-      "Computer repair and IT support for the everyday stuff — a slow computer, a nasty virus, a new machine to set up. That covers email and printer setup, some basic tutoring, and getting your home wifi actually working.",
+      "Computer repair and IT support for the everyday stuff: a slow computer, a nasty virus, a new machine to set up. That covers email and printer setup, some basic tutoring, and getting your home wifi actually working.",
     price: 'Starting at $40',
   },
   {
     Icon: PhoneHelpIcon,
     title: 'Phone & Tablet Help',
     description:
-      "Patient, one-on-one help with smartphones and tablets — texting, video calls with family, photos, apps, or just getting comfortable with a new device. Especially popular with older residents, but open to anyone who'd rather have a person walk them through it than a manual.",
+      "Patient, one-on-one help with smartphones and tablets: texting, video calls with family, photos, apps, or just getting comfortable with a new device. Especially popular with older residents, but open to anyone who'd rather have a person walk them through it than a manual.",
     price: 'Starting at $40',
   },
   {
     Icon: StarlinkIcon,
     title: 'Starlink Setup & Troubleshooting',
     description:
-      "Not sure if Starlink will even work at your property? I'll come test it. If it works, I'll handle the Starlink installation and configuration, and I'm your contact for any troubleshooting after — billed as a standard visit, same as PC Help.",
+      "Not sure if Starlink will even work at your property? I'll come test it. If it works, I'll handle the Starlink installation and configuration, and I'm your contact for any troubleshooting after (billed as a standard visit, same as PC Help).",
     price: 'Free quote',
   },
   {
     Icon: CameraIcon,
     title: 'Security Camera Installs',
     description:
-      "Wireless or wired camera systems for your home or small property, up to 4 cameras. Placement, mounting, and getting the app working are all part of it — I'll quote it based on what you need.",
+      "Wireless or wired camera systems for your home or small property, up to 4 cameras. Placement, mounting, and getting the app working are all part of it. I'll quote it based on what you need.",
     price: 'Free quote',
   },
   {
     Icon: WebsiteIcon,
     title: 'Website Building',
     description:
-      "I build simple, clean one-page websites for local businesses — your name, services, contact info, and hours. Fast turnaround, nothing bloated.",
+      "I build simple, clean one-page websites for local businesses: your name, services, contact info, and hours. Fast turnaround, nothing bloated.",
     price: 'Starting at $500',
   },
   {
@@ -56,15 +56,15 @@ export default function Services() {
           </span>
           <h2 className="mb-3 text-[2rem] font-extrabold">Services</h2>
           <p className="text-[1.05rem] text-text-dim">
-            Straightforward tech help, priced fairly. Every job starts with a quick conversation — I won't book anything until you know what it'll cost.
+            Straightforward tech help, priced fairly. Every job starts with a quick conversation. I won't book anything until you know what it'll cost.
           </p>
         </div>
 
         <div className="grid max-w-[1100px] grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-[22px]">
           {services.map((service, i) => (
             <Reveal key={service.title} delay={i * 80} className="h-full">
-              <div className="group flex h-full flex-col rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-[3px] hover:border-lava">
-                <div className="mb-[16px] flex h-14 w-14 items-center justify-center rounded-lg bg-bg-alt text-lava-light transition-transform duration-300 group-hover:-rotate-6 group-hover:scale-110">
+              <div className="group flex h-full flex-col rounded-xl border border-border bg-card p-7 transition-all hover:-translate-y-[3px] hover:border-mineral">
+                <div className="mb-[16px] flex h-14 w-14 items-center justify-center rounded-lg bg-bg-alt text-lava-light transition-all duration-300 group-hover:-rotate-6 group-hover:scale-110 group-hover:text-mineral">
                   <service.Icon className="h-8 w-8" />
                 </div>
                 <h3 className="mb-[10px] text-[1.2rem] font-bold">{service.title}</h3>

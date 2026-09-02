@@ -5,7 +5,7 @@ const facts = [
     icon: '📍',
     title: 'Service Area',
     detail:
-      'Free travel within about 10 miles of Lava Hot Springs. Beyond that, a small travel fee based on distance — included in your quote — covers Soda Springs, Bancroft, McCammon, Arimo, and other towns around them, about a 30-mile loop. Willing to travel farther for the right job — just ask.',
+      'Free travel within about 10 miles of Lava Hot Springs. Beyond that, a small travel fee based on distance (included in your quote) covers Soda Springs, Bancroft, McCammon, Arimo, and other towns around them, about a 30-mile loop. Willing to travel farther for the right job. Just ask.',
   },
   {
     icon: '🗓️',
@@ -15,7 +15,7 @@ const facts = [
   {
     icon: '🤝',
     title: 'How it Works',
-    detail: 'Fill out the quick form (fastest way to reach me) or call/text — happy to talk through what you need before anything is scheduled.',
+    detail: 'Fill out the quick form (fastest way to reach me) or call/text. Happy to talk through what you need before anything is scheduled.',
   },
 ]
 

@@ -46,7 +46,7 @@ export default function Contact() {
         <Reveal className="mx-auto max-w-[650px] rounded-2xl border border-border bg-card p-[44px] text-center">
           <h2 className="mb-3 text-[1.8rem] font-extrabold">Let's get it fixed</h2>
           <p className="mb-7 text-text-dim">
-            Reach out however's easiest — I'll get back to you soon.
+            Reach out however's easiest, I'll get back to you soon.
           </p>
           <div className="mb-2 flex flex-wrap justify-center gap-[14px]">
             <a
@@ -77,7 +77,7 @@ export default function Contact() {
 
           {status === 'sent' ? (
             <p className="rounded-lg border border-lava bg-bg px-[22px] py-[18px] text-[0.95rem] font-semibold text-lava-light">
-              Got it — thanks! I'll get back to you soon.
+              Got it, thanks! I'll get back to you soon.
             </p>
           ) : (
             <form onSubmit={handleSubmit} className="flex flex-col gap-3 text-left">
@@ -95,7 +95,7 @@ export default function Contact() {
                   name="Name"
                   placeholder="Your name"
                   required
-                  className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
+                  className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
                 />
               </div>
               <div className="grid grid-cols-1 gap-3 min-[701px]:grid-cols-2">
@@ -110,7 +110,7 @@ export default function Contact() {
                     name="Email"
                     placeholder="john.doe@gmail.com"
                     onChange={syncReachValidity}
-                    className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
+                    className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
                   />
                 </div>
                 <div>
@@ -126,7 +126,7 @@ export default function Contact() {
                     pattern="\+?1?[ .\-]?\(?\d{3}\)?[ .\-]?\d{3}[ .\-]?\d{4}"
                     title="Enter a valid 10-digit phone number"
                     onChange={syncReachValidity}
-                    className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
+                    className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
                   />
                 </div>
               </div>
@@ -139,7 +139,7 @@ export default function Contact() {
                   name="Service"
                   defaultValue=""
                   required
-                  className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text focus:border-lava-light focus:outline-none"
+                  className="w-full rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text focus:border-mineral focus:outline-none"
                 >
                   <option value="" disabled>
                     What do you need help with?
@@ -161,7 +161,7 @@ export default function Contact() {
                   placeholder="What's going on? Any details help."
                   rows={4}
                   required
-                  className="w-full resize-none rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-lava-light focus:outline-none"
+                  className="w-full resize-none rounded-lg border border-border bg-bg px-[18px] py-[12px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
                 />
               </div>
 
@@ -175,7 +175,7 @@ export default function Contact() {
 
               {status === 'error' && (
                 <p className="text-[0.85rem] font-semibold text-ember">
-                  Something went wrong sending that — mind calling or texting instead?
+                  Something went wrong sending that. Mind calling or texting instead?
                 </p>
               )}
             </form>
