@@ -18,7 +18,10 @@ Vite + React + TypeScript + Tailwind CSS v4 (via `@tailwindcss/vite`, `@theme` b
 - `src/App.tsx` — assembles the page: `Header`, `Hero`, `Services`, `ServiceArea`, `Contact`, `Footer`.
 - `src/components/` — one component per section, each a straight port of the original single-page static site. `Services.tsx` and `ServiceArea.tsx` hold their content as small data arrays (`services`, `facts`) mapped to JSX — edit the array, not repeated markup.
 - `index.html` — Vite's HTML template (title, meta description, favicon links, Open Graph/Twitter tags). This is not the rendered page; the page lives in `src/`.
-- `public/` — static assets copied as-is to the build root: `favicon.svg` / `favicon-16.png` / `favicon-32.png` / `favicon-512.png` / `apple-touch-icon.png` (generated from the steam-badge logo mark in `Logo.tsx` — regenerate by re-rendering that SVG at the needed sizes if the logo changes, don't hand-edit the PNGs) and `CNAME` (custom domain for GitHub Pages: `lavatechpro.com`).
+- `public/` — static assets copied as-is to the build root:
+  - `favicon.svg` / `favicon-16.png` / `favicon-32.png` / `favicon-512.png` / `apple-touch-icon.png` — the browser-tab/bookmark icons, generated from the circular steam-badge mark in `src/components/Logo.tsx`. Regenerate by re-rendering that SVG at the needed sizes if the favicon ever changes, don't hand-edit the PNGs. `Logo.tsx` is no longer imported anywhere in `src/` (the header dropped it for `lavatech-logo.svg` below) — it only still exists as this favicon source, don't treat it as dead code to delete.
+  - `images/` — photos and the header logo: `lavatech-logo.svg` (the full "LavaTech Pro" wordmark + mountain lockup used in `Header.tsx`, traced from a generated logo image with potrace, flat-filled with the theme's color tokens), plus `about-me.jpg`, `on-the-job.jpg`, `l-mountain.jpg` (also the Hero background, see `HERO_IMAGE` in `Hero.tsx`).
+  - `CNAME` — custom domain for GitHub Pages (`lavatechpro.com`).
 
 ## Conventions
 
