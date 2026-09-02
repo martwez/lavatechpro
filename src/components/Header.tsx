@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Logo from './Logo'
 
 const navLinks = [
   { href: '#services', label: 'Services' },
@@ -26,17 +25,8 @@ export default function Header() {
       }`}
     >
       <div className="flex items-center justify-between px-6 py-3 max-w-[1100px] mx-auto">
-        <a
-          href="#"
-          aria-label="LavaTech Pro home"
-          className="flex items-center gap-3 text-[1.55rem] font-extrabold tracking-[0.5px] no-underline"
-        >
-          <Logo size={60} />
-          <span>
-            <span className="text-lava-light">Lava</span>
-            <span className="text-text">Tech</span>
-            <span className="text-lava-light"> Pro</span>
-          </span>
+        <a href="#" aria-label="LavaTech Pro home" className="flex items-center no-underline">
+          <img src="/images/lavatech-logo.svg" alt="" className="h-14 w-auto" />
         </a>
 
         <nav className="hidden min-[701px]:block">
