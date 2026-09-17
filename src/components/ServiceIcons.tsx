@@ -66,6 +66,36 @@ export function WebsiteIcon({ className }: IconProps) {
   )
 }
 
+export function InstallIcon({ className }: IconProps) {
+  return (
+    <svg {...shared} className={className} aria-hidden="true">
+      <path d="M10 30l14-20 14 20z" />
+      <path d="M6 38h36" />
+      <path d="M18 30v8M30 30v8" />
+    </svg>
+  )
+}
+
+export function TroubleshootIcon({ className }: IconProps) {
+  return (
+    <svg {...shared} className={className} aria-hidden="true">
+      <circle cx="24" cy="24" r="7" />
+      <path d="M24 8v8M24 32v8M8 24h8M32 24h8" />
+      <path d="M13.5 13.5l5.7 5.7M28.8 28.8l5.7 5.7M34.5 13.5l-5.7 5.7M19.2 28.8l-5.7 5.7" strokeWidth="1.8" />
+    </svg>
+  )
+}
+
+export function ExtendCoverageIcon({ className }: IconProps) {
+  return (
+    <svg {...shared} className={className} aria-hidden="true">
+      <rect x="6" y="20" width="13" height="14" rx="2" />
+      <rect x="29" y="10" width="13" height="24" rx="2" />
+      <path d="M20 21q4-5 8 0" strokeWidth="1.8" />
+    </svg>
+  )
+}
+
 export function Printer3DIcon({ className }: IconProps) {
   return (
     <svg {...shared} className={className} aria-hidden="true">
