@@ -12,6 +12,7 @@ export default defineConfig({
         main: resolve(import.meta.dirname, 'index.html'),
         security: resolve(import.meta.dirname, 'security/index.html'),
         portfolio: resolve(import.meta.dirname, 'portfolio/index.html'),
+        websiteDesign: resolve(import.meta.dirname, 'website-design/index.html'),
       },
     },
   },

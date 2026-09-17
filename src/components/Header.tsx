@@ -4,7 +4,7 @@ const serviceLinks = [
   { href: '/#pc-help', label: 'PC Help' },
   { href: '/#starlink', label: 'Starlink' },
   { href: '/security/', label: 'Security & Cameras' },
-  { href: '/#website-design', label: 'Website Design' },
+  { href: '/website-design/', label: 'Website Design' },
   { href: '/#3d-printing', label: '3D Printing' },
 ]
 
