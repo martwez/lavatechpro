@@ -16,15 +16,6 @@ const features = [
     ],
   },
   {
-    image: '/images/security-home.jpg',
-    alt: 'Digital smart home control panel mounted on a wall',
-    eyebrow: 'Home Security',
-    title: 'Sensors, locks, and motion detection, all in one app',
-    description:
-      "Beyond cameras, I install door and window sensors, smart locks, and motion detectors that tie into the same app as your cameras. Everything's self-monitored: if a sensor trips, the alert goes straight to your phone, not a call center. No monthly monitoring contract, just full control from your pocket.",
-    bullets: ['Door & window sensors', 'Smart locks, keypad or app-controlled', 'Motion detection', 'One app, no monitoring fees'],
-  },
-  {
     image: '/images/security-multibuilding.jpg',
     alt: 'Metal shop building with two bay doors',
     eyebrow: 'Commercial / Multi-Site',
