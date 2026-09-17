@@ -66,16 +66,16 @@ export default function SecurityPage() {
           </p>
         </Reveal>
 
-        <div className="flex flex-col divide-y divide-border">
+        <div className="flex flex-col">
           {features.map((feature, i) => (
             <Reveal
               key={feature.title}
               delay={i * 80}
               className={`flex flex-col gap-7 py-10 min-[701px]:items-center min-[701px]:gap-12 min-[701px]:py-12 min-[701px]:flex-row ${
                 i % 2 === 1 ? 'min-[701px]:flex-row-reverse' : ''
-              }`}
+              } ${i > 0 ? 'border-t-[3px] border-border' : ''}`}
             >
-              <div className="w-full shrink-0 overflow-hidden rounded-xl border border-border min-[701px]:w-[320px]">
+              <div className="w-full shrink-0 overflow-hidden rounded-xl border-[3px] border-border min-[701px]:w-[320px]">
                 <img src={feature.image} alt={feature.alt} className="aspect-[4/3] w-full object-cover" loading="lazy" />
               </div>
               <div className="flex-1">
@@ -97,10 +97,10 @@ export default function SecurityPage() {
           ))}
         </div>
 
-        <div className="mt-14 grid max-w-[1100px] grid-cols-1 gap-8 border-t border-border pt-10 min-[701px]:grid-cols-3">
+        <div className="mt-14 grid max-w-[1100px] grid-cols-1 gap-8 border-t-[3px] border-border pt-10 min-[701px]:grid-cols-3">
           {steps.map((step, i) => (
             <div key={step.title} className="flex items-start gap-4">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-mineral text-[0.9rem] font-bold text-mineral">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-[3px] border-mineral text-[0.9rem] font-bold text-mineral">
                 {i + 1}
               </span>
               <div>
@@ -113,7 +113,7 @@ export default function SecurityPage() {
 
         <div className="mt-12 text-center">
           <a
-            href="#contact"
+            href="/#contact"
             className="inline-block rounded-md bg-ember px-6 py-3 text-[0.95rem] font-bold text-ink transition-all hover:brightness-110"
           >
             Get a free walkthrough &amp; quote

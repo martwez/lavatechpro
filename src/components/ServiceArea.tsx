@@ -2,59 +2,61 @@ import Reveal from './Reveal'
 
 const facts = [
   {
-    icon: '📍',
-    title: 'Service Area',
+    stat: '10 mi',
+    title: 'Free travel radius',
     detail:
-      'Free travel within about 10 miles of Lava Hot Springs. Beyond that, a small travel fee based on distance (included in your quote) covers Soda Springs, Bancroft, McCammon, Arimo, and other towns around them, about a 30-mile loop. Willing to travel farther for the right job. Just ask.',
+      'Beyond that, a small distance-based fee covers Soda Springs, Bancroft, McCammon, Arimo and the towns around them, about a 30-mile loop. Willing to go farther for the right job.',
+    color: 'text-mineral',
   },
   {
-    icon: '🗓️',
-    title: 'Availability',
-    detail: 'Fridays & weekends',
+    stat: 'Fri–Sun',
+    title: 'Available',
+    detail: 'On the road most Fridays and weekends. Book ahead to lock in a time, especially for longer install jobs.',
+    color: 'text-lava-light',
   },
   {
-    icon: '🤝',
-    title: 'How it Works',
-    detail: 'Fill out the quick form (fastest way to reach me) or call/text. Happy to talk through what you need before anything is scheduled.',
+    stat: '1 form',
+    title: 'How it works',
+    detail: 'Fill out the quick form (fastest way to reach me) or call/text. We talk through what you need before anything is scheduled.',
+    color: 'text-ember',
   },
 ]
 
 export default function ServiceArea() {
   return (
     <section id="area" className="scroll-mt-[85px] px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
-      <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[0.9fr_1.1fr_0.9fr]">
-        <Reveal>
-          <span className="mb-[10px] block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
-            Coverage &amp; Availability
-          </span>
-          <h2 className="mb-[18px] text-[2rem] font-extrabold">
-            Where and when I work
-          </h2>
-          <p className="mb-4 text-text-dim">
-            Based in Lava Hot Springs and out on the road most Fridays and weekends, covering other nearby towns too. Book ahead to lock in a time, especially for install jobs that run a little longer.
-          </p>
-        </Reveal>
-        <Reveal delay={100}>
-          <img
-            src="/images/on-the-job.jpg"
-            alt="On the job locally"
-            className="h-full min-h-[340px] w-full rounded-xl border border-border object-cover"
-          />
-        </Reveal>
-        <Reveal delay={150} className="rounded-xl border border-border bg-card p-[26px]">
+      <div className="mx-auto max-w-[1100px] px-6">
+        <div className="grid grid-cols-1 items-center gap-[50px] min-[701px]:grid-cols-2">
+          <Reveal>
+            <h2 className="mb-[18px] text-[2rem] font-extrabold">
+              Coverage &amp; Availability
+            </h2>
+            <p className="mb-4 text-text-dim">
+              Based in Lava Hot Springs and out on the road most Fridays and weekends, covering other nearby towns too. Book ahead to lock in a time, especially for install jobs that run a little longer.
+            </p>
+          </Reveal>
+          <Reveal delay={100}>
+            <img
+              src="/images/on-the-job.jpg"
+              alt="On the job locally"
+              className="h-full min-h-[340px] w-full rounded-xl border-[3px] border-border object-cover"
+            />
+          </Reveal>
+        </div>
+
+        <div className="mt-12 grid grid-cols-1 rounded-xl border-[3px] border-mineral min-[701px]:grid-cols-3">
           {facts.map((fact, i) => (
-            <div
+            <Reveal
               key={fact.title}
-              className={`flex gap-[14px] py-[14px] ${i < facts.length - 1 ? 'border-b border-border' : ''}`}
+              delay={150 + i * 80}
+              className={`px-7 py-8 ${i > 0 ? 'border-t-[3px] border-border min-[701px]:border-l-[3px] min-[701px]:border-t-0' : ''}`}
             >
-              <div className="text-[1.3rem]" aria-hidden="true">{fact.icon}</div>
-              <div>
-                <h3 className="mb-[3px] text-[0.95rem] font-bold">{fact.title}</h3>
-                <span className="text-[0.88rem] text-text-dim">{fact.detail}</span>
-              </div>
-            </div>
+              <div className={`mb-1 text-[2.4rem] font-extrabold leading-none tabular-nums ${fact.color}`}>{fact.stat}</div>
+              <h3 className="mb-2 text-[0.95rem] font-bold">{fact.title}</h3>
+              <p className="text-[0.85rem] text-text-dim">{fact.detail}</p>
+            </Reveal>
           ))}
-        </Reveal>
+        </div>
       </div>
     </section>
   )

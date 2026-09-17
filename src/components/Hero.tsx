@@ -11,7 +11,7 @@ const HERO_VIDEO = ''
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-border bg-[radial-gradient(circle_at_30%_15%,#241f19_0%,#1c1a17_60%)] px-5 pt-[60px] pb-[50px] text-center min-[701px]:px-6 min-[701px]:pt-[90px] min-[701px]:pb-[80px]">
+    <section className="relative overflow-hidden border-b-[3px] border-border bg-[radial-gradient(circle_at_30%_15%,#241f19_0%,#1c1a17_60%)] px-5 pt-[60px] pb-[50px] text-center min-[701px]:px-6 min-[701px]:pt-[90px] min-[701px]:pb-[80px]">
       {HERO_VIDEO ? (
         <video
           className="absolute inset-0 h-full w-full object-cover"
@@ -44,7 +44,7 @@ export default function Hero() {
           </a>
           <a
             href="#services"
-            className="inline-block rounded-lg border-[1.5px] border-border bg-ink px-[30px] py-[14px] text-base font-bold text-text transition-colors hover:border-lava-light hover:text-lava-light"
+            className="inline-block rounded-lg border-[3px] border-border bg-ink px-[30px] py-[14px] text-base font-bold text-text transition-colors hover:border-lava-light hover:text-lava-light"
           >
             See Services
           </a>

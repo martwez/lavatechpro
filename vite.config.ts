@@ -11,6 +11,7 @@ export default defineConfig({
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
         security: resolve(import.meta.dirname, 'security/index.html'),
+        portfolio: resolve(import.meta.dirname, 'portfolio/index.html'),
       },
     },
   },
