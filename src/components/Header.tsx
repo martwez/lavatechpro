@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 
 const navLinks = [
-  { href: '#services', label: 'Services' },
-  { href: '#area', label: 'Service Area' },
-  { href: '#about', label: 'About' },
+  { href: '/#services', label: 'Services' },
+  { href: '/security/', label: 'Security' },
+  { href: '/#area', label: 'Service Area' },
+  { href: '/#about', label: 'About' },
   { href: '#contact', label: 'Contact' },
 ]
 
@@ -25,7 +26,7 @@ export default function Header() {
       }`}
     >
       <div className="flex items-center justify-between px-6 py-3 max-w-[1100px] mx-auto">
-        <a href="#" aria-label="LavaTech Pro home" className="flex items-center no-underline">
+        <a href="/" aria-label="LavaTech Pro home" className="flex items-center no-underline">
           <img src="/images/lavatech-logo.svg" alt="" className="h-14 w-auto" />
         </a>
 
