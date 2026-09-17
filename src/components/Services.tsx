@@ -1,6 +1,8 @@
 import Reveal from './Reveal'
 import { PcHelpIcon, PhoneHelpIcon, StarlinkIcon, CameraIcon, WebsiteIcon, Printer3DIcon } from './ServiceIcons'
 
+const accentColors = ['var(--color-mineral)', 'var(--color-ember)', 'var(--color-lava-light)']
+
 const services = [
   {
     Icon: PcHelpIcon,
@@ -72,9 +74,10 @@ export default function Services() {
             <Reveal key={service.title} id={service.slug} delay={i * 80} className="h-full scroll-mt-[85px]">
               <a
                 href={`/${service.path ?? service.slug}/`}
-                className="group flex h-full flex-col rounded-xl border-[3px] border-border bg-card p-7 transition-all hover:-translate-y-[3px] hover:border-mineral"
+                style={{ borderTopColor: accentColors[i % accentColors.length] }}
+                className="group flex h-full flex-col rounded-xl border-[3px] border-t-[4px] border-border bg-card p-7 transition-all hover:-translate-y-[3px]"
               >
-                <div className="mb-[16px] flex h-14 w-14 items-center justify-center rounded-lg bg-bg-alt text-lava-light transition-all duration-300 group-hover:-rotate-6 group-hover:scale-110 group-hover:text-mineral">
+                <div className="mb-[16px] flex h-14 w-14 items-center justify-center rounded-lg bg-[color-mix(in_srgb,var(--color-mineral)_18%,var(--color-bg-alt))] text-lava-light transition-all duration-300 group-hover:-rotate-6 group-hover:scale-110 group-hover:text-mineral">
                   <service.Icon className="h-8 w-8" />
                 </div>
                 <h3 className="mb-[10px] text-[1.2rem] font-bold transition-colors group-hover:text-lava-light">{service.title}</h3>
