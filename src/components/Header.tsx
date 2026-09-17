@@ -1,17 +1,18 @@
 import { useEffect, useRef, useState } from 'react'
 
 const serviceLinks = [
-  { href: '/#pc-help', label: 'PC Help' },
-  { href: '/#starlink', label: 'Starlink' },
+  { href: '/pc-help/', label: 'PC Help' },
+  { href: '/phone-help/', label: 'Phone & Tablet Help' },
+  { href: '/starlink/', label: 'Starlink' },
   { href: '/security/', label: 'Security & Cameras' },
   { href: '/website-design/', label: 'Website Design' },
-  { href: '/#3d-printing', label: '3D Printing' },
+  { href: '/3d-printing/', label: '3D Printing' },
 ]
 
 const navLinks = [
-  { href: '/portfolio/', label: 'Portfolio' },
   { href: '/#area', label: 'Service Area' },
   { href: '/#about', label: 'About' },
+  { href: '/portfolio/', label: 'Portfolio' },
 ]
 
 export default function Header() {
@@ -89,7 +90,7 @@ export default function Header() {
                       key={link.href}
                       href={link.href}
                       onClick={() => setServicesOpen(false)}
-                      className="block rounded-lg px-3 py-2 text-[0.9rem] font-semibold text-text-dim transition-colors hover:bg-bg-alt hover:text-lava-light"
+                      className="block rounded-lg px-3 py-2.5 text-[0.9rem] font-semibold text-text-dim transition-colors hover:bg-bg-alt hover:text-lava-light"
                     >
                       {link.label}
                     </a>

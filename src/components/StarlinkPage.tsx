@@ -1,66 +1,66 @@
 import Reveal from './Reveal'
-import { WebsiteIcon } from './ServiceIcons'
+import { StarlinkIcon } from './ServiceIcons'
 
 const features = [
   {
-    Icon: WebsiteIcon,
-    eyebrow: 'One-Page Sites',
-    title: 'Simple, clean, and built for local businesses',
+    Icon: StarlinkIcon,
+    eyebrow: 'Free Site Test',
+    title: "Not sure Starlink will even work at your property?",
     description:
-      "Your name, your services, your hours, and a way for people to reach you, all on one fast-loading page. No bloated page builder, no plugins you'll have to keep updated forever, just a site that does its job and looks good doing it.",
+      "Trees, terrain, and outbuildings can all block the sky view Starlink needs. Rather than guess, I'll come out with a dish and actually test the signal from a few spots on your property before you buy anything.",
     bullets: [
-      'Built to work well on phones first',
-      'Your services, hours, and contact info up front',
-      'No subscription page-builder lock-in',
-      'Fast to load, easy to find',
+      'On-site signal test before you commit',
+      'Best mounting spot identified up front',
+      'No obligation if it turns out it won’t work well',
+      'Works for homes, shops, and remote properties',
     ],
   },
   {
-    Icon: WebsiteIcon,
-    eyebrow: 'Process',
-    title: 'A quick turnaround, without cutting corners',
+    Icon: StarlinkIcon,
+    eyebrow: 'Install & Setup',
+    title: 'Full install, mounted right and routed clean',
     description:
-      "We start with a short conversation about your business and what you want visitors to do when they land on your site. From there I build it, send it over for your feedback, and get it live once you're happy with it.",
+      "Once you're ready, I handle the whole install: mounting the dish, running cable, and setting up the router so your whole house is online. I test it before I leave to make sure the connection is stable, not just live.",
     bullets: [
-      'A conversation first, not a form to fill out',
-      'A build you can review before it goes live',
-      'Revisions worked in before launch',
-      'Domain and hosting help if you need it',
+      'Roof, pole, or wall mounting',
+      'Cable routed cleanly, not just draped',
+      'Router and wifi setup included',
+      'Tested for stability, not just a signal',
     ],
   },
   {
-    Icon: WebsiteIcon,
-    eyebrow: 'After Launch',
-    title: "Still here after the site goes live",
+    Icon: StarlinkIcon,
+    eyebrow: 'Ongoing Support',
+    title: "Your contact after it's installed, too",
     description:
-      "A site is never really finished, hours change, a new service gets added, a photo needs swapping. I'm around after launch for updates and care, and we can talk through what makes sense for how often you expect to need changes.",
+      "If the connection acts up down the road, an obstruction shifted, the app is showing errors, whatever it is, I'm the same person you call. Troubleshooting visits are billed the same as a standard PC Help visit.",
     bullets: [
-      'Small updates and edits after launch',
-      'A real person to call, not a support ticket',
-      'Options discussed up front, nothing sprung on you',
-      'No obligation to sign up for ongoing care',
+      'Same installer, same contact, later on',
+      'Troubleshooting billed as a standard visit',
+      'Help with the Starlink app and account',
+      'Repositioning if something starts blocking the signal',
     ],
   },
 ]
 
 const steps = [
-  { title: 'Conversation', description: "We talk through your business and what the site needs to do." },
-  { title: 'Build & review', description: "I build the site and send it over for your feedback before it's live." },
-  { title: 'Launch', description: "Once you're happy with it, it goes live on your domain, starting at $500." },
+  { title: 'Free site test', description: "I test the actual signal at your property before anything is sold." },
+  { title: 'Quote & install', description: "If it works, I quote the mounting job and get everything installed and routed." },
+  { title: 'Ongoing help', description: "I stay your contact for setup or signal issues after the fact." },
 ]
 
-export default function WebsiteDesignPage() {
+export default function StarlinkPage() {
   return (
     <section className="scroll-mt-[85px] bg-bg-alt px-5 py-16 min-[701px]:px-6 min-[701px]:py-24">
       <div className="max-w-[1100px] mx-auto px-6">
         <Reveal className="mx-auto mb-16 max-w-[650px] text-center">
           <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
-            Website Building
+            Rural Internet
           </span>
-          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">Website Design</h1>
+          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">Starlink Setup & Troubleshooting</h1>
           <p className="text-[1.05rem] text-text-dim">
-            I build simple, clean one-page websites for local businesses: your name, services, contact info, and
-            hours. Fast turnaround, nothing bloated.
+            From testing whether it'll work at your property to a full install and staying on as your contact
+            after, here's the whole process.
           </p>
         </Reveal>
 
@@ -114,7 +114,7 @@ export default function WebsiteDesignPage() {
             href="/#contact"
             className="inline-block rounded-md bg-ember px-6 py-3 text-[0.95rem] font-bold text-ink transition-all hover:brightness-110"
           >
-            Get in touch
+            Get a free site test
           </a>
         </div>
       </div>

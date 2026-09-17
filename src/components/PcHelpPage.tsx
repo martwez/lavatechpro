@@ -1,66 +1,66 @@
 import Reveal from './Reveal'
-import { WebsiteIcon } from './ServiceIcons'
+import { PcHelpIcon } from './ServiceIcons'
 
 const features = [
   {
-    Icon: WebsiteIcon,
-    eyebrow: 'One-Page Sites',
-    title: 'Simple, clean, and built for local businesses',
+    Icon: PcHelpIcon,
+    eyebrow: 'Repair & Troubleshooting',
+    title: 'The everyday stuff that goes wrong',
     description:
-      "Your name, your services, your hours, and a way for people to reach you, all on one fast-loading page. No bloated page builder, no plugins you'll have to keep updated forever, just a site that does its job and looks good doing it.",
+      "A computer that's slow for no reason, a virus that snuck in, a program that won't open right. I'll figure out what's actually causing it and fix that, instead of just telling you to restart it and hope. Windows or Mac, desktop or laptop.",
     bullets: [
-      'Built to work well on phones first',
-      'Your services, hours, and contact info up front',
-      'No subscription page-builder lock-in',
-      'Fast to load, easy to find',
+      'Virus and malware removal',
+      'Speeding up a slow or cluttered computer',
+      'Software and driver issues',
+      'Hardware troubleshooting and upgrades',
     ],
   },
   {
-    Icon: WebsiteIcon,
-    eyebrow: 'Process',
-    title: 'A quick turnaround, without cutting corners',
+    Icon: PcHelpIcon,
+    eyebrow: 'Setup',
+    title: 'Getting a new machine (or your network) actually working',
     description:
-      "We start with a short conversation about your business and what you want visitors to do when they land on your site. From there I build it, send it over for your feedback, and get it live once you're happy with it.",
+      "New computer setup, moving your files and logins over from the old one, getting your printer and email working right. This is also where home wifi issues usually get sorted out, dead zones, dropped connections, or a router that's never been touched since install day.",
     bullets: [
-      'A conversation first, not a form to fill out',
-      'A build you can review before it goes live',
-      'Revisions worked in before launch',
-      'Domain and hosting help if you need it',
+      'New computer setup and file transfer',
+      'Email and printer setup',
+      'Home wifi troubleshooting',
+      'Software installs and updates',
     ],
   },
   {
-    Icon: WebsiteIcon,
-    eyebrow: 'After Launch',
-    title: "Still here after the site goes live",
+    Icon: PcHelpIcon,
+    eyebrow: 'Tutoring',
+    title: "One-on-one, at your pace, no jargon",
     description:
-      "A site is never really finished, hours change, a new service gets added, a photo needs swapping. I'm around after launch for updates and care, and we can talk through what makes sense for how often you expect to need changes.",
+      "Some of this isn't a repair at all, it's just wanting a real person to sit down and walk you through something: video calls, a new app, backing up your photos. I'll explain it in plain terms and make sure it sticks before I leave.",
     bullets: [
-      'Small updates and edits after launch',
-      'A real person to call, not a support ticket',
-      'Options discussed up front, nothing sprung on you',
-      'No obligation to sign up for ongoing care',
+      'Basic computer skills, taught patiently',
+      'Backups and photo organization',
+      'Setting up accounts and passwords safely',
+      'Whatever you’ve been putting off asking about',
     ],
   },
 ]
 
 const steps = [
-  { title: 'Conversation', description: "We talk through your business and what the site needs to do." },
-  { title: 'Build & review', description: "I build the site and send it over for your feedback before it's live." },
-  { title: 'Launch', description: "Once you're happy with it, it goes live on your domain, starting at $500." },
+  { title: 'Quick call or message', description: "Tell me what's going on. Most of the time I can get a sense of it before I even show up." },
+  { title: 'Straightforward quote', description: "A real price before anything gets booked, starting at $40 for a standard visit." },
+  { title: 'Fixed, and explained', description: "I fix it, then walk you through what happened so it's less likely to happen again." },
 ]
 
-export default function WebsiteDesignPage() {
+export default function PcHelpPage() {
   return (
     <section className="scroll-mt-[85px] bg-bg-alt px-5 py-16 min-[701px]:px-6 min-[701px]:py-24">
       <div className="max-w-[1100px] mx-auto px-6">
         <Reveal className="mx-auto mb-16 max-w-[650px] text-center">
           <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
-            Website Building
+            Computer Repair & Support
           </span>
-          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">Website Design</h1>
+          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">PC Help</h1>
           <p className="text-[1.05rem] text-text-dim">
-            I build simple, clean one-page websites for local businesses: your name, services, contact info, and
-            hours. Fast turnaround, nothing bloated.
+            Repair, setup, and tutoring for the everyday tech problems that pile up. No jargon, no upselling,
+            just getting it working and making sure you understand it.
           </p>
         </Reveal>
 
@@ -114,7 +114,7 @@ export default function WebsiteDesignPage() {
             href="/#contact"
             className="inline-block rounded-md bg-ember px-6 py-3 text-[0.95rem] font-bold text-ink transition-all hover:brightness-110"
           >
-            Get in touch
+            Get a free quote
           </a>
         </div>
       </div>

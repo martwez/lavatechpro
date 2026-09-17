@@ -24,11 +24,14 @@ const facts = [
 
 export default function ServiceArea() {
   return (
-    <section id="area" className="scroll-mt-[85px] px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
+    <section id="area" className="scroll-mt-[85px] px-5 py-16 min-[701px]:px-6 min-[701px]:py-24">
       <div className="mx-auto max-w-[1100px] px-6">
         <div className="grid grid-cols-1 items-center gap-[50px] min-[701px]:grid-cols-2">
           <Reveal>
-            <h2 className="mb-[18px] text-[2rem] font-extrabold">
+            <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
+              Service Area
+            </span>
+            <h2 className="mb-4 text-[2rem] font-extrabold">
               Coverage &amp; Availability
             </h2>
             <p className="mb-4 text-text-dim">
@@ -44,7 +47,7 @@ export default function ServiceArea() {
           </Reveal>
         </div>
 
-        <div className="mt-12 grid grid-cols-1 rounded-xl border-[3px] border-mineral min-[701px]:grid-cols-3">
+        <div className="mt-14 grid grid-cols-1 rounded-xl border-[3px] border-mineral min-[701px]:grid-cols-3">
           {facts.map((fact, i) => (
             <Reveal
               key={fact.title}

@@ -11,7 +11,7 @@ const HERO_VIDEO = ''
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden border-b-[3px] border-border bg-[radial-gradient(circle_at_30%_15%,#241f19_0%,#1c1a17_60%)] px-5 pt-[60px] pb-[50px] text-center min-[701px]:px-6 min-[701px]:pt-[90px] min-[701px]:pb-[80px]">
+    <section className="relative overflow-hidden border-b-[3px] border-border bg-[radial-gradient(circle_at_30%_15%,#241f19_0%,#1c1a17_60%)] px-5 pt-20 pb-16 text-center min-[701px]:px-6 min-[701px]:pt-28 min-[701px]:pb-24">
       {HERO_VIDEO ? (
         <video
           className="absolute inset-0 h-full w-full object-cover"
@@ -49,7 +49,7 @@ export default function Hero() {
             See Services
           </a>
         </div>
-        <div className="mt-11 flex flex-wrap justify-center gap-7 text-[0.9rem] text-[#e4e0d6] [text-shadow:0_1px_3px_rgba(0,0,0,0.9),0_2px_10px_rgba(0,0,0,0.6)] animate-[fade-up_0.6s_ease-out_both] [animation-delay:360ms]">
+        <div className="mt-12 flex flex-wrap justify-center gap-7 text-[0.9rem] text-[#e4e0d6] [text-shadow:0_1px_3px_rgba(0,0,0,0.9),0_2px_10px_rgba(0,0,0,0.6)] animate-[fade-up_0.6s_ease-out_both] [animation-delay:360ms]">
           <div className="flex items-center gap-2">
             <span className="h-[6px] w-[6px] rounded-full bg-ember" /> Free travel within 10 miles
           </div>

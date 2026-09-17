@@ -41,11 +41,11 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="scroll-mt-[85px] px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
+    <section id="contact" className="scroll-mt-[85px] px-5 py-16 min-[701px]:px-6 min-[701px]:py-24">
       <div className="max-w-[1100px] mx-auto px-6">
-        <Reveal className="mx-auto max-w-[650px] rounded-2xl border-[3px] border-border bg-card px-[26px] py-[38px] text-center min-[701px]:p-[44px]">
-          <h2 className="mb-3 text-[1.8rem] font-extrabold">Let's get it fixed</h2>
-          <p className="mb-7 text-text-dim">
+        <Reveal className="mx-auto max-w-[650px] rounded-2xl border-[3px] border-border bg-card px-[26px] py-10 text-center min-[701px]:p-[52px]">
+          <h2 className="mb-4 text-[1.8rem] font-extrabold">Let's get it fixed</h2>
+          <p className="mb-8 text-text-dim">
             Reach out however's easiest, I'll get back to you soon.
           </p>
           <div className="mb-2 flex flex-wrap justify-center gap-[14px]">

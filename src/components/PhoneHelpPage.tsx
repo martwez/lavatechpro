@@ -1,66 +1,66 @@
 import Reveal from './Reveal'
-import { WebsiteIcon } from './ServiceIcons'
+import { PhoneHelpIcon } from './ServiceIcons'
 
 const features = [
   {
-    Icon: WebsiteIcon,
-    eyebrow: 'One-Page Sites',
-    title: 'Simple, clean, and built for local businesses',
+    Icon: PhoneHelpIcon,
+    eyebrow: 'One-on-One Help',
+    title: "Patient, no-rush help with your phone or tablet",
     description:
-      "Your name, your services, your hours, and a way for people to reach you, all on one fast-loading page. No bloated page builder, no plugins you'll have to keep updated forever, just a site that does its job and looks good doing it.",
+      "Texting, video calls with family, taking and finding photos, or just getting comfortable with a device that feels like it changed overnight. I sit down with you, go at your pace, and explain things in plain language instead of tech-speak.",
     bullets: [
-      'Built to work well on phones first',
-      'Your services, hours, and contact info up front',
-      'No subscription page-builder lock-in',
-      'Fast to load, easy to find',
+      'Texting, calling, and video calls',
+      'Photos: taking, finding, and backing them up',
+      'Apps you actually use, set up right',
+      'Especially popular with older residents',
     ],
   },
   {
-    Icon: WebsiteIcon,
-    eyebrow: 'Process',
-    title: 'A quick turnaround, without cutting corners',
+    Icon: PhoneHelpIcon,
+    eyebrow: 'New Device',
+    title: 'Switching phones without losing anything',
     description:
-      "We start with a short conversation about your business and what you want visitors to do when they land on your site. From there I build it, send it over for your feedback, and get it live once you're happy with it.",
+      "Got a new phone or tablet and dreading moving everything over? I'll transfer your contacts, photos, and apps from the old device to the new one, and make sure your accounts and passwords carry over cleanly.",
     bullets: [
-      'A conversation first, not a form to fill out',
-      'A build you can review before it goes live',
-      'Revisions worked in before launch',
-      'Domain and hosting help if you need it',
+      'Contacts, photos, and app transfer',
+      'Account and password setup',
+      'Old device wiped safely once you’re moved over',
+      'Works across brands, not just matching devices',
     ],
   },
   {
-    Icon: WebsiteIcon,
-    eyebrow: 'After Launch',
-    title: "Still here after the site goes live",
+    Icon: PhoneHelpIcon,
+    eyebrow: 'Staying Connected',
+    title: 'Video calls with the grandkids, actually working',
     description:
-      "A site is never really finished, hours change, a new service gets added, a photo needs swapping. I'm around after launch for updates and care, and we can talk through what makes sense for how often you expect to need changes.",
+      "A lot of this job is getting a device set up so a family can stay in touch: video calls, shared photos, group texts. Once it's set up right, I make sure you know how to use it on your own before I leave.",
     bullets: [
-      'Small updates and edits after launch',
-      'A real person to call, not a support ticket',
-      'Options discussed up front, nothing sprung on you',
-      'No obligation to sign up for ongoing care',
+      'Video call apps set up and tested',
+      'Shown how to use it, not just handed a working phone',
+      'Written down steps if you want a reminder',
+      'Follow-up help if something changes',
     ],
   },
 ]
 
 const steps = [
-  { title: 'Conversation', description: "We talk through your business and what the site needs to do." },
-  { title: 'Build & review', description: "I build the site and send it over for your feedback before it's live." },
-  { title: 'Launch', description: "Once you're happy with it, it goes live on your domain, starting at $500." },
+  { title: 'Quick call or message', description: "Tell me what device you have and what you're trying to do." },
+  { title: 'Straightforward quote', description: "A real price before anything gets booked, starting at $40 for a standard visit." },
+  { title: 'Shown, not just done', description: "I walk you through it so you can do it yourself next time." },
 ]
 
-export default function WebsiteDesignPage() {
+export default function PhoneHelpPage() {
   return (
     <section className="scroll-mt-[85px] bg-bg-alt px-5 py-16 min-[701px]:px-6 min-[701px]:py-24">
       <div className="max-w-[1100px] mx-auto px-6">
         <Reveal className="mx-auto mb-16 max-w-[650px] text-center">
           <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
-            Website Building
+            Smartphones & Tablets
           </span>
-          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">Website Design</h1>
+          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">Phone & Tablet Help</h1>
           <p className="text-[1.05rem] text-text-dim">
-            I build simple, clean one-page websites for local businesses: your name, services, contact info, and
-            hours. Fast turnaround, nothing bloated.
+            One-on-one help with the device you actually carry around: texting, video calls, photos, apps, or a
+            brand new phone that needs setting up right.
           </p>
         </Reveal>
 
@@ -114,7 +114,7 @@ export default function WebsiteDesignPage() {
             href="/#contact"
             className="inline-block rounded-md bg-ember px-6 py-3 text-[0.95rem] font-bold text-ink transition-all hover:brightness-110"
           >
-            Get in touch
+            Get a free quote
           </a>
         </div>
       </div>

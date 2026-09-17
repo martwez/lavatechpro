@@ -53,13 +53,13 @@ const steps = [
 
 export default function SecurityPage() {
   return (
-    <section className="scroll-mt-[85px] bg-bg-alt px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
+    <section className="scroll-mt-[85px] bg-bg-alt px-5 py-16 min-[701px]:px-6 min-[701px]:py-24">
       <div className="max-w-[1100px] mx-auto px-6">
         <Reveal className="mx-auto mb-16 max-w-[650px] text-center">
-          <span className="mb-[10px] block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
+          <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             Cameras &amp; Home Security
           </span>
-          <h1 className="mb-3 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">Security &amp; Camera Systems</h1>
+          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">Security &amp; Camera Systems</h1>
           <p className="text-[1.05rem] text-text-dim">
             From a single camera over the garage to a full multi-building setup, I design the system around your
             property, not a prepackaged kit. Here's everything that falls under that.
@@ -84,7 +84,7 @@ export default function SecurityPage() {
                 </span>
                 <h2 className="mb-3 text-[1.4rem] font-bold">{feature.title}</h2>
                 <p className="mb-4 max-w-[640px] text-[0.98rem] leading-relaxed text-text-dim">{feature.description}</p>
-                <ul className="grid grid-cols-1 gap-x-6 gap-y-2 text-[0.92rem] text-text-dim min-[701px]:grid-cols-2">
+                <ul className="grid grid-cols-1 gap-x-6 gap-y-3 text-[0.92rem] text-text-dim min-[701px]:grid-cols-2">
                   {feature.bullets.map((bullet) => (
                     <li key={bullet} className="flex gap-2">
                       <span className="text-mineral">&bull;</span>

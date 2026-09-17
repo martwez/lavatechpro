@@ -29,6 +29,7 @@ const services = [
   {
     Icon: CameraIcon,
     slug: 'security-cameras',
+    path: 'security',
     title: 'Security Camera Installs',
     description:
       "Wireless or wired camera systems for your home or small property, up to 4 cameras. Placement, mounting, and getting the app working are all part of it. I'll quote it based on what you need.",
@@ -54,34 +55,37 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="scroll-mt-[85px] bg-bg-alt px-5 py-[50px] min-[701px]:px-6 min-[701px]:py-[70px]">
+    <section id="services" className="scroll-mt-[85px] bg-bg-alt px-5 py-16 min-[701px]:px-6 min-[701px]:py-24">
       <div className="max-w-[1100px] mx-auto px-6">
-        <div className="mx-auto mb-12 max-w-[650px] text-center">
-          <span className="mb-[10px] block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
+        <div className="mx-auto mb-14 max-w-[650px] text-center">
+          <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             What I Do
           </span>
-          <h2 className="mb-3 text-[2rem] font-extrabold">Services</h2>
+          <h2 className="mb-4 text-[2rem] font-extrabold">Services</h2>
           <p className="text-[1.05rem] text-text-dim">
             Straightforward tech help, priced fairly. Every job starts with a quick conversation. I won't book anything until you know what it'll cost.
           </p>
         </div>
 
-        <div className="grid max-w-[1100px] grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-[22px]">
+        <div className="grid max-w-[1100px] grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-7">
           {services.map((service, i) => (
             <Reveal key={service.title} id={service.slug} delay={i * 80} className="h-full scroll-mt-[85px]">
-              <div className="group flex h-full flex-col rounded-xl border-[3px] border-border bg-card p-7 transition-all hover:-translate-y-[3px] hover:border-mineral">
+              <a
+                href={`/${service.path ?? service.slug}/`}
+                className="group flex h-full flex-col rounded-xl border-[3px] border-border bg-card p-7 transition-all hover:-translate-y-[3px] hover:border-mineral"
+              >
                 <div className="mb-[16px] flex h-14 w-14 items-center justify-center rounded-lg bg-bg-alt text-lava-light transition-all duration-300 group-hover:-rotate-6 group-hover:scale-110 group-hover:text-mineral">
                   <service.Icon className="h-8 w-8" />
                 </div>
-                <h3 className="mb-[10px] text-[1.2rem] font-bold">{service.title}</h3>
-                <p className="mb-4 text-[0.95rem] text-text-dim">{service.description}</p>
-                <a
-                  href="#contact"
-                  className="mt-auto inline-block w-fit rounded-md bg-ember px-3 py-[6px] text-[0.85rem] font-bold text-ink transition-all hover:brightness-110"
-                >
+                <h3 className="mb-[10px] text-[1.2rem] font-bold transition-colors group-hover:text-lava-light">{service.title}</h3>
+                <p className="mb-2 text-[0.95rem] text-text-dim">{service.description}</p>
+                <p className="mb-5 text-[0.85rem] font-semibold text-lava-light transition-colors group-hover:text-mineral">
+                  Click to learn more &rarr;
+                </p>
+                <span className="mt-auto inline-block w-fit rounded-md bg-ember px-3 py-[6px] text-[0.85rem] font-bold text-ink transition-all group-hover:brightness-110">
                   {service.price}
-                </a>
-              </div>
+                </span>
+              </a>
             </Reveal>
           ))}
         </div>
