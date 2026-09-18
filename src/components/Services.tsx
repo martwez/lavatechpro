@@ -44,7 +44,7 @@ const services = [
     Icon: Printer3DIcon,
     slug: '3d-printing',
     title: '3D Printing',
-    description: 'Custom prints, replacement parts, and small-batch projects.',
+    description: 'Bring your own file, I\'ll print it, single pieces or batch runs.',
     price: 'Free quote',
   },
 ]

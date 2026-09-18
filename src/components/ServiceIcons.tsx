@@ -96,6 +96,26 @@ export function ExtendCoverageIcon({ className }: IconProps) {
   )
 }
 
+export function FileIcon({ className }: IconProps) {
+  return (
+    <svg {...shared} className={className} aria-hidden="true">
+      <path d="M14 6h14l8 8v26a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" />
+      <path d="M28 6v8h8" />
+      <path d="M17 27l6-3 6 3v6l-6 3-6-3z" />
+    </svg>
+  )
+}
+
+export function BatchIcon({ className }: IconProps) {
+  return (
+    <svg {...shared} className={className} aria-hidden="true">
+      <rect x="7" y="21" width="15" height="15" rx="2" />
+      <rect x="17" y="11" width="15" height="15" rx="2" fill="var(--color-bg-alt)" />
+      <rect x="27" y="21" width="15" height="15" rx="2" />
+    </svg>
+  )
+}
+
 export function Printer3DIcon({ className }: IconProps) {
   return (
     <svg {...shared} className={className} aria-hidden="true">
