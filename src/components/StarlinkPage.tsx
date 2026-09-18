@@ -6,8 +6,7 @@ const tiles = [
     Icon: StarlinkIcon,
     accent: 'mineral' as const,
     title: 'Site test',
-    description:
-      "Not sure Starlink will work at your property? I'll come test the signal in person. Free within my normal 10-mile service area; a small travel fee applies farther out.",
+    description: "Not sure Starlink will work at your property? I'll come test the signal in person before you commit to anything.",
   },
   {
     Icon: InstallIcon,

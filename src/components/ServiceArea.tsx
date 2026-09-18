@@ -47,16 +47,16 @@ export default function ServiceArea() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 rounded-xl border-[3px] border-mineral min-[701px]:grid-cols-3">
+        <div className="mt-14 grid grid-cols-1 rounded-xl border-[3px] border-mineral bg-card-light min-[701px]:grid-cols-3">
           {facts.map((fact, i) => (
             <Reveal
               key={fact.title}
               delay={150 + i * 80}
-              className={`px-7 py-8 ${i > 0 ? 'border-t-[3px] border-border min-[701px]:border-l-[3px] min-[701px]:border-t-0' : ''}`}
+              className={`px-7 py-8 ${i > 0 ? 'border-t-[3px] border-mineral min-[701px]:border-l-[3px] min-[701px]:border-t-0' : ''}`}
             >
               <div className={`mb-1 text-[2.4rem] font-extrabold leading-none tabular-nums ${fact.color}`}>{fact.stat}</div>
               <h3 className="mb-2 text-[0.95rem] font-bold">{fact.title}</h3>
-              <p className="text-[0.85rem] text-text-dim">{fact.detail}</p>
+              <p className="text-[0.85rem] text-text-dim-light">{fact.detail}</p>
             </Reveal>
           ))}
         </div>

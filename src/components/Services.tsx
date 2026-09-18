@@ -26,8 +26,7 @@ const services = [
     title: 'Starlink Setup & Troubleshooting',
     description:
       "Not sure if Starlink will even work at your property? I'll come test it. If it works, I'll handle the Starlink installation and configuration, and I'm your contact for any troubleshooting after.",
-    price: 'Free quote',
-    promo: 'Special promo on this page',
+    price: 'Special promotion',
   },
   {
     Icon: CameraIcon,
@@ -81,11 +80,6 @@ export default function Services() {
                 <div className="mb-[16px] flex h-14 w-14 items-center justify-center rounded-lg bg-[color-mix(in_srgb,var(--color-mineral)_18%,var(--color-bg-alt))] text-lava-light transition-all duration-300 group-hover:-rotate-6 group-hover:scale-110">
                   <service.Icon className="h-8 w-8" />
                 </div>
-                {service.promo && (
-                  <span className="mb-2 inline-block w-fit rounded-full bg-[color-mix(in_srgb,var(--color-ember)_20%,var(--color-bg-alt))] px-2.5 py-1 text-[0.72rem] font-bold uppercase tracking-wide text-ember">
-                    {service.promo}
-                  </span>
-                )}
                 <h3 className="mb-[10px] text-[1.2rem] font-bold">{service.title}</h3>
                 <p className="mb-2 text-[0.95rem] text-text-dim-light">{service.description}</p>
                 <p className="mb-5 text-[0.85rem] font-semibold text-lava-light">
