@@ -8,24 +8,21 @@ const services = [
     Icon: PcHelpIcon,
     slug: 'pc-help',
     title: 'PC Help',
-    description:
-      "Computer repair and IT support for the everyday stuff: a slow computer, a nasty virus, a new machine to set up. That covers email and printer setup, some basic tutoring, and getting your home wifi actually working.",
+    description: 'Repair, setup, and tutoring for the everyday stuff that goes wrong.',
     price: 'Starting at $40',
   },
   {
     Icon: PhoneHelpIcon,
     slug: 'phone-help',
     title: 'Phone & Tablet Help',
-    description:
-      "Patient, one-on-one help with smartphones and tablets: texting, video calls with family, photos, apps, or just getting comfortable with a new device. Especially popular with older residents, but open to anyone who'd rather have a person walk them through it than a manual.",
+    description: 'Patient, one-on-one help with smartphones and tablets.',
     price: 'Starting at $40',
   },
   {
     Icon: StarlinkIcon,
     slug: 'starlink',
     title: 'Starlink Setup & Troubleshooting',
-    description:
-      "Not sure if Starlink will even work at your property? I'll come test it. If it works, I'll handle the Starlink installation and configuration, and I'm your contact for any troubleshooting after.",
+    description: 'On-site testing, full install, and I stay your contact after.',
     price: 'Special promotion',
   },
   {
@@ -33,24 +30,21 @@ const services = [
     slug: 'security-cameras',
     path: 'security',
     title: 'Security Camera Installs',
-    description:
-      "Wireless or wired camera systems for your home or small property, up to 4 cameras. Placement, mounting, and getting the app working are all part of it. I'll quote it based on what you need.",
+    description: 'Wireless or wired systems, up to 4 cameras, quoted to fit your property.',
     price: 'Free quote',
   },
   {
     Icon: WebsiteIcon,
     slug: 'website-design',
     title: 'Website Building',
-    description:
-      "I build simple, clean one-page websites for local businesses: your name, services, contact info, and hours. Fast turnaround, nothing bloated.",
+    description: 'Simple, clean one-page sites for local businesses. Fast turnaround.',
     price: 'Starting at $500',
   },
   {
     Icon: Printer3DIcon,
     slug: '3d-printing',
     title: '3D Printing',
-    description:
-      "Custom prints, replacement parts, prototypes, and small-batch projects. Send me what you need and I'll let you know what's possible.",
+    description: 'Custom prints, replacement parts, and small-batch projects.',
     price: 'Free quote',
   },
 ]
@@ -75,17 +69,20 @@ export default function Services() {
               <a
                 href={`/${service.path ?? service.slug}/`}
                 style={{ borderTopColor: accentColors[i % accentColors.length] }}
-                className="group flex h-full flex-col rounded-xl border-[3px] border-t-[4px] border-border-light bg-card-light p-7 transition-all hover:-translate-y-[3px]"
+                className="group flex h-full flex-col rounded-xl border-[2px] border-t-[3px] border-border bg-card-light p-5 transition-all hover:-translate-y-[3px]"
               >
-                <div className="mb-[16px] flex h-14 w-14 items-center justify-center rounded-lg bg-[color-mix(in_srgb,var(--color-mineral)_18%,var(--color-bg-alt))] text-lava-light transition-all duration-300 group-hover:-rotate-6 group-hover:scale-110">
-                  <service.Icon className="h-8 w-8" />
+                <div
+                  style={{ backgroundColor: `color-mix(in srgb, ${accentColors[i % accentColors.length]} 28%, transparent)`, color: accentColors[i % accentColors.length] }}
+                  className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg transition-all duration-300 group-hover:-rotate-6 group-hover:scale-110"
+                >
+                  <service.Icon className="h-5 w-5" />
                 </div>
-                <h3 className="mb-[10px] text-[1.2rem] font-bold">{service.title}</h3>
-                <p className="mb-2 text-[0.95rem] text-text-dim-light">{service.description}</p>
-                <p className="mb-5 text-[0.85rem] font-semibold text-lava-light">
+                <h3 className="mb-1 text-[1.05rem] font-bold">{service.title}</h3>
+                <p className="mb-2 text-[0.85rem] text-text-dim-light">{service.description}</p>
+                <p className="mb-4 text-[0.8rem] font-semibold text-lava-light">
                   Click to learn more &rarr;
                 </p>
-                <span className="mt-auto inline-block w-fit rounded-md bg-ember px-3 py-[6px] text-[0.85rem] font-bold text-ink transition-all group-hover:brightness-110">
+                <span className="mt-auto inline-block w-fit rounded-md bg-ember px-3 py-[6px] text-[0.8rem] font-bold text-ink transition-all group-hover:brightness-110">
                   {service.price}
                 </span>
               </a>
