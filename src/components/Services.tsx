@@ -76,9 +76,9 @@ export default function Services() {
               <a
                 href={`/${service.path ?? service.slug}/`}
                 style={{ borderTopColor: accentColors[i % accentColors.length] }}
-                className="group flex h-full flex-col rounded-xl border-[3px] border-t-[4px] border-border bg-card p-7 transition-all hover:-translate-y-[3px]"
+                className="group flex h-full flex-col rounded-xl border-[3px] border-t-[4px] border-border-light bg-card-light p-7 transition-all hover:-translate-y-[3px]"
               >
-                <div className="mb-[16px] flex h-14 w-14 items-center justify-center rounded-lg bg-[color-mix(in_srgb,var(--color-mineral)_18%,var(--color-bg-alt))] text-lava-light transition-all duration-300 group-hover:-rotate-6 group-hover:scale-110 group-hover:text-mineral">
+                <div className="mb-[16px] flex h-14 w-14 items-center justify-center rounded-lg bg-[color-mix(in_srgb,var(--color-mineral)_18%,var(--color-bg-alt))] text-lava-light transition-all duration-300 group-hover:-rotate-6 group-hover:scale-110">
                   <service.Icon className="h-8 w-8" />
                 </div>
                 {service.promo && (
@@ -86,9 +86,9 @@ export default function Services() {
                     {service.promo}
                   </span>
                 )}
-                <h3 className="mb-[10px] text-[1.2rem] font-bold transition-colors group-hover:text-lava-light">{service.title}</h3>
-                <p className="mb-2 text-[0.95rem] text-text-dim">{service.description}</p>
-                <p className="mb-5 text-[0.85rem] font-semibold text-lava-light transition-colors group-hover:text-mineral">
+                <h3 className="mb-[10px] text-[1.2rem] font-bold">{service.title}</h3>
+                <p className="mb-2 text-[0.95rem] text-text-dim-light">{service.description}</p>
+                <p className="mb-5 text-[0.85rem] font-semibold text-lava-light">
                   Click to learn more &rarr;
                 </p>
                 <span className="mt-auto inline-block w-fit rounded-md bg-ember px-3 py-[6px] text-[0.85rem] font-bold text-ink transition-all group-hover:brightness-110">
