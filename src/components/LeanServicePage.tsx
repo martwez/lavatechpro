@@ -48,7 +48,7 @@ export default function LeanServicePage({ eyebrow, title, subtitle, tiles, promo
         <div className="mb-8 grid grid-cols-1 gap-4 min-[701px]:grid-cols-2">
           {tiles.map((tile, i) => (
             <Reveal key={tile.title} delay={i * 80}>
-              <div className="h-full rounded-xl border-[2px] border-border bg-card p-5">
+              <div className="h-full rounded-xl border-[2px] border-border bg-card-light p-5">
                 <div className={`mb-3 flex h-9 w-9 items-center justify-center rounded-lg ${accentClasses[tile.accent]}`}>
                   <tile.Icon className="h-5 w-5" />
                 </div>
@@ -61,7 +61,7 @@ export default function LeanServicePage({ eyebrow, title, subtitle, tiles, promo
 
         {promo && (
           <Reveal delay={tiles.length * 80} className="mb-10">
-            <div className="flex flex-wrap items-center justify-between gap-4 rounded-xl border-[2px] border-ember bg-[color-mix(in_srgb,var(--color-ember)_14%,var(--color-card))] px-6 py-5">
+            <div className="flex flex-wrap items-center justify-between gap-4 rounded-xl border-[2px] border-ember bg-[color-mix(in_srgb,var(--color-ember)_14%,var(--color-card-light))] px-6 py-5">
               <div>
                 <h3 className="mb-1 text-[1rem] font-bold">{promo.title}</h3>
                 <p className="text-[0.9rem] text-text-dim">{promo.description}</p>

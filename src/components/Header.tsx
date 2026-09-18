@@ -84,7 +84,7 @@ export default function Header() {
                 </svg>
               </button>
               {servicesOpen && (
-                <div className="absolute left-1/2 top-full mt-3 w-56 -translate-x-1/2 rounded-xl border-[3px] border-border bg-card p-2 shadow-[0_12px_30px_rgba(0,0,0,0.45)]">
+                <div className="absolute left-1/2 top-full mt-3 w-56 -translate-x-1/2 rounded-xl border-[3px] border-border bg-card-light p-2 shadow-[0_12px_30px_rgba(0,0,0,0.45)]">
                   {serviceLinks.map((link) => (
                     <a
                       key={link.href}

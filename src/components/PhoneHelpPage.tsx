@@ -73,7 +73,7 @@ export default function PhoneHelpPage() {
                 i % 2 === 1 ? 'min-[701px]:flex-row-reverse' : ''
               } ${i > 0 ? 'border-t-[3px] border-border' : ''}`}
             >
-              <div className="flex aspect-[4/3] w-full shrink-0 items-center justify-center overflow-hidden rounded-xl border-[3px] border-border bg-card text-lava-light min-[701px]:w-[320px]">
+              <div className="flex aspect-[4/3] w-full shrink-0 items-center justify-center overflow-hidden rounded-xl border-[3px] border-border bg-card-light text-lava-light min-[701px]:w-[320px]">
                 <feature.Icon className="h-20 w-20" />
               </div>
               <div className="flex-1">
