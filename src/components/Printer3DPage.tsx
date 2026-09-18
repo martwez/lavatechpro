@@ -27,7 +27,7 @@ export default function Printer3DPage() {
     <LeanServicePage
       eyebrow="3D Printing"
       title="3D Printing"
-      subtitle="Bring me a print-ready file and I'll take it from there, single pieces or batch runs."
+      subtitle="Bring me a print-ready file and I'll take it from there, single pieces or batch runs. Local pickup or drop-off only, I don't ship prints."
       tiles={tiles}
       ctaLabel="Get a free quote"
       ctaHref="/#contact"
