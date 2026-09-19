@@ -117,6 +117,27 @@ export function PhotoTransferIcon({ className }: IconProps) {
   )
 }
 
+export function ScamBlockIcon({ className }: IconProps) {
+  return (
+    <svg {...shared} className={className} aria-hidden="true">
+      <path d="M24 6l14 5v11c0 10-6 17-14 21-8-4-14-11-14-21V11z" />
+      <circle cx="24" cy="23" r="7" />
+      <path d="M19.5 18.5l9 9" strokeWidth="1.8" />
+    </svg>
+  )
+}
+
+export function PasswordIcon({ className }: IconProps) {
+  return (
+    <svg {...shared} className={className} aria-hidden="true">
+      <rect x="12" y="22" width="24" height="18" rx="3" />
+      <path d="M17 22v-6a7 7 0 0 1 14 0v6" />
+      <circle cx="24" cy="30" r="2" fill="currentColor" stroke="none" />
+      <path d="M24 32v4" />
+    </svg>
+  )
+}
+
 export function FileIcon({ className }: IconProps) {
   return (
     <svg {...shared} className={className} aria-hidden="true">

@@ -1,5 +1,5 @@
 import LeanServicePage from './LeanServicePage'
-import { VideoCallIcon, PhotoTransferIcon, PhoneHelpIcon } from './ServiceIcons'
+import { VideoCallIcon, PhotoTransferIcon, PhoneHelpIcon, ScamBlockIcon, PasswordIcon } from './ServiceIcons'
 
 const tiles = [
   {
@@ -20,6 +20,18 @@ const tiles = [
     title: 'New device setup',
     description: "Switching phones? I'll move your contacts, photos, and apps over so nothing gets lost.",
   },
+  {
+    Icon: ScamBlockIcon,
+    accent: 'mineral' as const,
+    title: 'Scam call blocking',
+    description: 'Cutting down robocalls and spam texts so the phone only rings for people you actually know.',
+  },
+  {
+    Icon: PasswordIcon,
+    accent: 'ember' as const,
+    title: 'Passcodes done right',
+    description: 'Setting up Face ID, fingerprint, or a passcode you\'ll actually remember, and recovering logins you\'ve lost.',
+  },
 ]
 
 export default function PhoneHelpPage() {
@@ -29,7 +41,7 @@ export default function PhoneHelpPage() {
       title="Phone & Tablet Help"
       subtitle="Patient, one-on-one help with the device you carry around, especially popular with older residents who'd rather have a person walk them through it than a manual."
       tiles={tiles}
-      ctaLabel="Get a free quote"
+      ctaLabel="Contact"
       ctaHref="/#contact"
     />
   )
