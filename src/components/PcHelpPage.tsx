@@ -114,7 +114,7 @@ export default function PcHelpPage() {
             href="/#contact"
             className="inline-block rounded-md bg-ember px-6 py-3 text-[0.95rem] font-bold text-ink transition-all hover:brightness-110"
           >
-            Get a free quote
+            Contact
           </a>
         </div>
       </div>

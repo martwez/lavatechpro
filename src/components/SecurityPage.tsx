@@ -116,7 +116,7 @@ export default function SecurityPage() {
             href="/#contact"
             className="inline-block rounded-md bg-ember px-6 py-3 text-[0.95rem] font-bold text-ink transition-all hover:brightness-110"
           >
-            Get a free walkthrough &amp; quote
+            Contact
           </a>
         </div>
       </div>

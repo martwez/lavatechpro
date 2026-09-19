@@ -41,7 +41,7 @@ export default function StarlinkPage() {
         ctaLabel: 'Use my referral link',
         href: 'https://starlink.com?referral=RC-DF-11158806-57224-96',
       }}
-      ctaLabel="Call or text to get started"
+      ctaLabel="Contact"
       ctaHref="/#contact"
     />
   )
