@@ -15,7 +15,7 @@ const services = [
     Icon: PhoneHelpIcon,
     slug: 'phone-help',
     title: 'Phone & Tablet Help',
-    description: 'Patient, one-on-one help with smartphones and tablets.',
+    description: 'Video calls with family, freeing up photo storage, patient device help.',
     price: 'Starting at $40',
   },
   {

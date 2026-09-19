@@ -96,6 +96,27 @@ export function ExtendCoverageIcon({ className }: IconProps) {
   )
 }
 
+export function VideoCallIcon({ className }: IconProps) {
+  return (
+    <svg {...shared} className={className} aria-hidden="true">
+      <rect x="6" y="10" width="22" height="28" rx="3" />
+      <path d="M32 18l10-6v24l-10-6z" />
+    </svg>
+  )
+}
+
+export function PhotoTransferIcon({ className }: IconProps) {
+  return (
+    <svg {...shared} className={className} aria-hidden="true">
+      <rect x="4" y="8" width="18" height="14" rx="2" />
+      <circle cx="9" cy="12" r="1.3" fill="currentColor" stroke="none" />
+      <path d="M6 19l4-4 3 3 5-6 3 4" />
+      <path d="M26 15h16" />
+      <path d="M38 10l4 5-4 5" />
+    </svg>
+  )
+}
+
 export function FileIcon({ className }: IconProps) {
   return (
     <svg {...shared} className={className} aria-hidden="true">
