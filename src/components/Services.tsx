@@ -1,11 +1,9 @@
 import Reveal from './Reveal'
-import { PcHelpIcon, PhoneHelpIcon, StarlinkIcon, CameraIcon, WebsiteIcon, Printer3DIcon } from './ServiceIcons'
 
 const accentColors = ['var(--color-mineral)', 'var(--color-ember)', 'var(--color-lava-light)']
 
 const services = [
   {
-    Icon: PcHelpIcon,
     slug: 'pc-help',
     title: 'Computer & Network Assistance',
     description: 'Repair, setup, and tutoring for the everyday stuff that goes wrong.',
@@ -13,7 +11,6 @@ const services = [
     image: '/images/pc-help.jpg',
   },
   {
-    Icon: PhoneHelpIcon,
     slug: 'phone-help',
     title: 'Mobile Device Assistance',
     description: 'Video calls with family, freeing up photo storage, patient device help.',
@@ -21,7 +18,6 @@ const services = [
     image: '/images/phone-help.jpg',
   },
   {
-    Icon: StarlinkIcon,
     slug: 'starlink',
     title: 'Starlink Setup & Troubleshooting',
     description: 'On-site testing, full install, and I stay your contact after.',
@@ -29,7 +25,6 @@ const services = [
     image: '/images/starlink.jpg',
   },
   {
-    Icon: CameraIcon,
     slug: 'security-cameras',
     path: 'security',
     title: 'Security Camera Installs',
@@ -38,7 +33,6 @@ const services = [
     image: '/images/security-cameras.jpg',
   },
   {
-    Icon: WebsiteIcon,
     slug: 'website-design',
     title: 'Website Building',
     description: 'Simple, clean one-page sites for local businesses. Fast turnaround.',
@@ -46,7 +40,6 @@ const services = [
     image: '/images/website-design.jpg',
   },
   {
-    Icon: Printer3DIcon,
     slug: '3d-printing',
     title: '3D Printing',
     description: 'Bring your own file, I\'ll print it, single pieces or batch runs.',
@@ -80,17 +73,11 @@ export default function Services() {
                 {service.image && (
                   <img
                     src={service.image}
-                    alt=""
+                    alt={service.title}
                     className="aspect-[4/3] w-full object-cover"
                   />
                 )}
                 <div className="flex h-full flex-col p-5">
-                  <div
-                    style={{ backgroundColor: `color-mix(in srgb, ${accentColors[i % accentColors.length]} 28%, transparent)`, color: accentColors[i % accentColors.length] }}
-                    className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg transition-all duration-300 group-hover:-rotate-6 group-hover:scale-110"
-                  >
-                    <service.Icon className="h-5 w-5" />
-                  </div>
                   <h3 className="mb-1 text-[1.05rem] font-bold">{service.title}</h3>
                   <p className="mb-4 text-[0.85rem] text-text-dim-light">{service.description}</p>
                   <span className="mt-auto inline-block w-fit rounded-md bg-ember px-3 py-[6px] text-[0.8rem] font-bold text-ink transition-all group-hover:brightness-110">

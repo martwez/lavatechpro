@@ -5,7 +5,7 @@ const facts = [
     stat: '10 mi',
     title: 'Free travel radius',
     detail:
-      'Beyond that, a small distance-based fee covers Soda Springs, Bancroft, McCammon, Arimo and the towns around them, about a 30-mile loop. Willing to go farther for the right job.',
+      'Beyond that, a small distance-based fee covers Inkom, McCammon, Robin, Arimo, Downey, Bancroft, Grace, and Soda Springs, about a 30-mile drive. Willing to go farther for the right job.',
     color: 'text-mineral',
   },
   {
@@ -40,9 +40,9 @@ export default function ServiceArea() {
           </Reveal>
           <Reveal delay={100}>
             <img
-              src="/images/on-the-job.jpg"
-              alt="On the job locally"
-              className="h-full min-h-[340px] w-full rounded-xl border-[3px] border-border object-cover"
+              src="/images/service-map.png"
+              alt="Map of the LavaTech Pro 30-mile service area around Lava Hot Springs, covering Inkom, McCammon, Robin, Arimo, Downey, Bancroft, Grace, and Soda Springs"
+              className="aspect-[3/2] w-full rounded-xl border-[3px] border-border object-contain"
             />
           </Reveal>
         </div>
