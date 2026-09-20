@@ -42,17 +42,6 @@ export function StarlinkIcon({ className }: IconProps) {
   )
 }
 
-export function CameraIcon({ className }: IconProps) {
-  return (
-    <svg {...shared} className={className} aria-hidden="true">
-      <path d="M14 18v-6h7" />
-      <rect x="8" y="18" width="22" height="14" rx="7" />
-      <circle cx="29" cy="25" r="5.5" />
-      <circle cx="29" cy="25" r="2" fill="currentColor" stroke="none" />
-    </svg>
-  )
-}
-
 export function WebsiteIcon({ className }: IconProps) {
   return (
     <svg {...shared} className={className} aria-hidden="true">
