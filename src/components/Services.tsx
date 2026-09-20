@@ -1,7 +1,5 @@
 import Reveal from './Reveal'
 
-const accentColors = ['var(--color-mineral)', 'var(--color-ember)', 'var(--color-lava-light)']
-
 const services = [
   {
     slug: 'pc-help',
@@ -67,8 +65,7 @@ export default function Services() {
             <Reveal key={service.title} id={service.slug} delay={i * 80} className="h-full scroll-mt-[85px]">
               <a
                 href={`/${service.path ?? service.slug}/`}
-                style={{ borderTopColor: accentColors[i % accentColors.length] }}
-                className="group flex h-full flex-col overflow-hidden rounded-xl border-[2px] border-t-[3px] border-border bg-card-light transition-all hover:-translate-y-[3px]"
+                className="group flex h-full flex-col overflow-hidden rounded-xl border-[2px] border-border bg-card-light transition-all hover:-translate-y-[3px]"
               >
                 {service.image && (
                   <img
