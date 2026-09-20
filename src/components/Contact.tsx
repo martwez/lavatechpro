@@ -3,7 +3,7 @@ import Reveal from './Reveal'
 
 const FORM_ENDPOINT = 'https://formsubmit.co/ajax/lavatechpro@gmail.com'
 
-const serviceOptions = ['PC Help', 'Starlink Setup', 'Security Cameras', 'Website Building', '3D Printing', 'Other']
+const serviceOptions = ['Computer & Network Assistance', 'Starlink Setup', 'Security Cameras', 'Website Building', '3D Printing', 'Other']
 
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 

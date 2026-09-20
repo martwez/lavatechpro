@@ -38,7 +38,7 @@ export default function PhoneHelpPage() {
   return (
     <LeanServicePage
       eyebrow="Smartphones & Tablets"
-      title="Phone & Tablet Help"
+      title="Mobile Device Assistance"
       subtitle="Patient, one-on-one help with the device you carry around, especially popular with older residents who'd rather have a person walk them through it than a manual."
       tiles={tiles}
       ctaLabel="Contact"

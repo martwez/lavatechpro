@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 
 const serviceLinks = [
-  { href: '/pc-help/', label: 'PC Help' },
-  { href: '/phone-help/', label: 'Phone & Tablet Help' },
+  { href: '/pc-help/', label: 'Computer & Network Assistance' },
+  { href: '/phone-help/', label: 'Mobile Device Assistance' },
   { href: '/starlink/', label: 'Starlink' },
   { href: '/security/', label: 'Security & Cameras' },
   { href: '/website-design/', label: 'Website Design' },
