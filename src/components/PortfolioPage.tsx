@@ -9,6 +9,14 @@ const projects = [
     image: '/images/portfolio-dreamydenz.jpg',
     href: 'https://dreamydenz.org',
   },
+  {
+    title: 'Bramble & Bee Makery',
+    tag: 'Online Shop Demo',
+    description:
+      'A sample storefront for a handmade craft seller: rotating banners, product collections, quick view, and secure Stripe checkout on every item. Built as a starting point for local makers who want to sell online.',
+    image: '/images/portfolio-craftshop.jpg',
+    href: 'https://martwez.github.io/craft-shop-demo/',
+  },
 ]
 
 export default function PortfolioPage() {
@@ -25,7 +33,7 @@ export default function PortfolioPage() {
           </p>
         </Reveal>
 
-        <div className="mx-auto grid max-w-[500px] grid-cols-1 gap-7">
+        <div className="mx-auto grid max-w-[500px] grid-cols-1 gap-7 min-[701px]:max-w-[1000px] min-[701px]:grid-cols-2">
           {projects.map((project, i) => (
             <Reveal key={project.title} delay={i * 80}>
               <a
