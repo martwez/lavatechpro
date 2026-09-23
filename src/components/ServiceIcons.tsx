@@ -42,19 +42,6 @@ export function StarlinkIcon({ className }: IconProps) {
   )
 }
 
-export function WebsiteIcon({ className }: IconProps) {
-  return (
-    <svg {...shared} className={className} aria-hidden="true">
-      <rect x="6" y="9" width="36" height="28" rx="3" />
-      <path d="M6 17h36" />
-      <circle cx="11.5" cy="13" r="1.2" fill="currentColor" stroke="none" />
-      <circle cx="15.5" cy="13" r="1.2" fill="currentColor" stroke="none" />
-      <circle cx="19.5" cy="13" r="1.2" fill="currentColor" stroke="none" />
-      <path d="M13 24h10M13 29h16M13 34h7" />
-    </svg>
-  )
-}
-
 export function InstallIcon({ className }: IconProps) {
   return (
     <svg {...shared} className={className} aria-hidden="true">
