@@ -14,16 +14,16 @@ const sites = [
     tag: 'Lodging Site Demo',
     description: 'A sample site for a cabin rental, with photo galleries, a booking request form, and local things to do.',
     image: '/images/site-lodging.jpg',
-    href: 'https://martwez.github.io/lodging-demo/',
-    domain: 'martwez.github.io/lodging-demo',
+    href: '/demos/lodging/',
+    domain: 'lavatechpro.com/demos/lodging',
   },
   {
     title: 'Basalt Ridge Construction',
     tag: 'Contractor Site Demo',
     description: 'A sample site for a construction and handyman business, with a project gallery and a free-estimate form.',
     image: '/images/site-handyman.jpg',
-    href: 'https://martwez.github.io/handyman-demo/',
-    domain: 'martwez.github.io/handyman-demo',
+    href: '/demos/handyman/',
+    domain: 'lavatechpro.com/demos/handyman',
   },
 ]
 

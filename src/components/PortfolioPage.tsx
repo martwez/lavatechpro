@@ -15,7 +15,7 @@ const projects = [
     description:
       'A sample storefront for a handmade craft seller: rotating banners, product collections, quick view, and secure Stripe checkout on every item. Built as a starting point for local makers who want to sell online.',
     image: '/images/portfolio-craftshop.jpg',
-    href: 'https://martwez.github.io/craft-shop-demo/',
+    href: '/demos/craft-shop/',
   },
   {
     title: 'Cedar & Steam Cabins',
@@ -23,7 +23,7 @@ const projects = [
     description:
       'A sample site for vacation rental hosts: cabin galleries, a direct "Request to Book" form that shows guests what they save on booking fees, and Airbnb/VRBO links for guests who prefer them.',
     image: '/images/portfolio-lodging.jpg',
-    href: 'https://martwez.github.io/lodging-demo/',
+    href: '/demos/lodging/',
   },
   {
     title: 'Basalt Ridge Construction',
@@ -31,7 +31,7 @@ const projects = [
     description:
       'A sample site for construction and handyman businesses: service cards for every trade, a filterable project gallery, and a detailed free-estimate form that collects everything needed to quote the job.',
     image: '/images/portfolio-handyman.jpg',
-    href: 'https://martwez.github.io/handyman-demo/',
+    href: '/demos/handyman/',
   },
   {
     title: 'Bannock Peak Realty',
@@ -39,7 +39,7 @@ const projects = [
     description:
       'A sample site for a local real estate agent: property search, listing pages with photo galleries, a mortgage calculator, and home valuation and showing request forms.',
     image: '/images/portfolio-realtor.jpg',
-    href: 'https://martwez.github.io/realtor-demo/',
+    href: '/demos/realtor/',
   },
 ]
 
