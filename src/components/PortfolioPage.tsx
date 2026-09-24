@@ -10,7 +10,7 @@ const projects = [
     href: 'https://dreamydenz.org',
   },
   {
-    title: 'Bramble & Bee Makery',
+    title: 'Chokecherry & Wren Makery',
     tag: 'Online Shop Demo',
     description:
       'A sample storefront for a handmade craft seller: rotating banners, product collections, quick view, and secure Stripe checkout on every item. Built as a starting point for local makers who want to sell online.',
