@@ -17,6 +17,30 @@ const projects = [
     image: '/images/portfolio-craftshop.jpg',
     href: 'https://martwez.github.io/craft-shop-demo/',
   },
+  {
+    title: 'Cedar & Steam Cabins',
+    tag: 'Lodging Demo',
+    description:
+      'A sample site for vacation rental hosts: cabin galleries, a direct "Request to Book" form that shows guests what they save on booking fees, and Airbnb/VRBO links for guests who prefer them.',
+    image: '/images/portfolio-lodging.jpg',
+    href: 'https://martwez.github.io/lodging-demo/',
+  },
+  {
+    title: 'Basalt Ridge Construction',
+    tag: 'Contractor Demo',
+    description:
+      'A sample site for construction and handyman businesses: service cards for every trade, a filterable project gallery, and a detailed free-estimate form that collects everything needed to quote the job.',
+    image: '/images/portfolio-handyman.jpg',
+    href: 'https://martwez.github.io/handyman-demo/',
+  },
+  {
+    title: 'Bannock Peak Realty',
+    tag: 'Real Estate Demo',
+    description:
+      'A sample site for a local real estate agent: property search, listing pages with photo galleries, a mortgage calculator, and home valuation and showing request forms.',
+    image: '/images/portfolio-realtor.jpg',
+    href: 'https://martwez.github.io/realtor-demo/',
+  },
 ]
 
 export default function PortfolioPage() {
@@ -35,7 +59,12 @@ export default function PortfolioPage() {
 
         <div className="mx-auto grid max-w-[500px] grid-cols-1 gap-7 min-[701px]:max-w-[1000px] min-[701px]:grid-cols-2">
           {projects.map((project, i) => (
-            <Reveal key={project.title} delay={i * 80}>
+            <Reveal
+              key={project.title}
+              delay={i * 80}
+              // An odd last card sits centered under the two-column grid instead of hanging left.
+              className="min-[701px]:last:odd:col-span-2 min-[701px]:last:odd:mx-auto min-[701px]:last:odd:w-[calc(50%-14px)]"
+            >
               <a
                 href={project.href}
                 target="_blank"
