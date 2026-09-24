@@ -18,12 +18,12 @@ const sites = [
     domain: 'martwez.github.io/lodging-demo',
   },
   {
-    title: 'Bramble & Bee Makery',
-    tag: 'Online Shop Demo',
-    description: 'A sample storefront for a handmade seller, with product collections and secure Stripe checkout.',
-    image: '/images/site-craftshop.jpg',
-    href: 'https://martwez.github.io/craft-shop-demo/',
-    domain: 'martwez.github.io/craft-shop-demo',
+    title: 'Basalt Ridge Construction',
+    tag: 'Contractor Site Demo',
+    description: 'A sample site for a construction and handyman business, with a project gallery and a free-estimate form.',
+    image: '/images/site-handyman.jpg',
+    href: 'https://martwez.github.io/handyman-demo/',
+    domain: 'martwez.github.io/handyman-demo',
   },
 ]
 
