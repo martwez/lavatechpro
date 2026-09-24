@@ -10,6 +10,14 @@ const sites = [
     domain: 'dreamydenz.org',
   },
   {
+    title: 'Cedar & Steam Cabins',
+    tag: 'Lodging Site Demo',
+    description: 'A sample site for a cabin rental, with photo galleries, a booking request form, and local things to do.',
+    image: '/images/site-lodging.jpg',
+    href: 'https://martwez.github.io/lodging-demo/',
+    domain: 'martwez.github.io/lodging-demo',
+  },
+  {
     title: 'Bramble & Bee Makery',
     tag: 'Online Shop Demo',
     description: 'A sample storefront for a handmade seller, with product collections and secure Stripe checkout.',
@@ -133,7 +141,7 @@ export default function WebsiteDesignPage() {
           <Reveal className="mb-6 text-center">
             <span className="block text-[0.8rem] font-bold uppercase tracking-[1.5px] text-mineral">Recent Work</span>
           </Reveal>
-          <div className="mx-auto grid max-w-[500px] grid-cols-1 gap-7 min-[701px]:max-w-none min-[701px]:grid-cols-2">
+          <div className="mx-auto grid max-w-[500px] grid-cols-1 gap-7 min-[901px]:max-w-none min-[901px]:grid-cols-3">
             {sites.map((site, i) => (
               <Reveal key={site.title} delay={i * 80}>
                 <a
