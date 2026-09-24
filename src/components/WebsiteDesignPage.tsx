@@ -36,8 +36,8 @@ const features = [
     bullets: [
       'Built to work well on phones first',
       'Your services, hours, and contact info up front',
-      'Your photos, or a quick photo session if you need one',
-      'Basic SEO and Google Business Profile setup',
+      'Built from your photos, with a simple shot list to help',
+      'Basic SEO, with your site linked to your Google Business Profile',
       'Domain registered and managed for you, no extra charge',
     ],
   },
@@ -75,7 +75,7 @@ const faqs = [
   },
   {
     q: 'Will my site show up on Google?',
-    a: "Every site gets basic SEO, plus Google Search Console and Google Business Profile setup under your own Google account, so Google can find and read your site. Nobody can honestly promise a top spot, but you'll start on solid footing.",
+    a: "Every site gets basic SEO and Google Search Console setup, so Google can find and read your site, and I link it to your Google Business Profile. No profile yet? I'll send you a step-by-step guide, or set it up with you for $50. Nobody can honestly promise a top spot, but you'll start on solid footing.",
   },
   {
     q: 'What about my domain name?',
