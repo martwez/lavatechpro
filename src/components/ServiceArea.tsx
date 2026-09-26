@@ -15,9 +15,9 @@ const facts = [
     color: 'text-lava-light',
   },
   {
-    stat: '1 form',
-    title: 'How it works',
-    detail: 'Fill out the quick form (fastest way to reach me) or call/text. We talk through what you need before anything is scheduled.',
+    stat: '$0',
+    title: 'To ask or get a quote',
+    detail: 'Fill out the quick form (fastest way to reach me) or call/text. We talk through what you need, and you get a real price before anything is scheduled.',
     color: 'text-ember',
   },
 ]
