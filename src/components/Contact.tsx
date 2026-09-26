@@ -46,7 +46,7 @@ export default function Contact() {
     <section id="contact" className="scroll-mt-[85px] px-5 py-16 min-[701px]:px-6 min-[701px]:py-24">
       <div className="max-w-[1100px] mx-auto px-6">
         <Reveal className="mx-auto max-w-[650px] rounded-2xl border-2 border-border-light bg-card-light px-[26px] py-10 text-center min-[701px]:p-[52px]">
-          <h2 className="mb-4 text-[1.8rem] font-bold">Let's get it fixed</h2>
+          <h2 className="mb-4 text-[1.8rem] font-bold">Tell me what you need</h2>
           <p className="mb-8 text-text-dim-light">
             Reach out however's easiest, I'll get back to you soon.
           </p>
