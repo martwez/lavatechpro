@@ -6,21 +6,21 @@ const services = [
     title: 'Computer & Network Assistance',
     description: 'Repair, setup, and tutoring for the everyday stuff that goes wrong.',
     price: 'Starting at $40',
-    image: '/images/pc-help.jpg',
+    image: '/images/pc-help.webp',
   },
   {
     slug: 'phone-help',
     title: 'Mobile Device Assistance',
     description: 'Video calls with family, freeing up photo storage, patient device help.',
     price: 'Starting at $40',
-    image: '/images/phone-help.jpg',
+    image: '/images/phone-help.webp',
   },
   {
     slug: 'starlink',
     title: 'Starlink Setup & Troubleshooting',
     description: 'On-site testing, full install, and I stay your contact after.',
     price: 'Special promotion',
-    image: '/images/starlink.jpg',
+    image: '/images/starlink.webp',
   },
   {
     slug: 'security-cameras',
@@ -28,21 +28,21 @@ const services = [
     title: 'Security Camera Installs',
     description: 'Wireless or wired systems, up to 4 cameras, quoted to fit your property.',
     price: 'Free quote',
-    image: '/images/security-cameras.jpg',
+    image: '/images/security-cameras.webp',
   },
   {
     slug: 'website-design',
     title: 'Website Building',
     description: 'Clean, simple websites for local businesses, up to 5 pages. Fast turnaround.',
     price: 'Starting at $500',
-    image: '/images/website-design.jpg',
+    image: '/images/website-design.webp',
   },
   {
     slug: '3d-printing',
     title: '3D Printing',
     description: 'Bring your own file, I\'ll print it, single pieces or batch runs.',
     price: 'Free quote',
-    image: '/images/3d-printing.jpg',
+    image: '/images/3d-printing.webp',
   },
 ]
 
@@ -77,7 +77,7 @@ export default function Services() {
                 <div className="flex h-full flex-col p-5">
                   <h3 className="mb-1 text-[1.05rem] font-bold">{service.title}</h3>
                   <p className="mb-4 text-[0.85rem] text-text-dim-light">{service.description}</p>
-                  <span className="mt-auto inline-block w-fit rounded-md bg-ember px-3 py-[6px] text-[0.8rem] font-bold text-ink transition-all group-hover:brightness-110">
+                  <span className="mt-auto inline-block w-fit rounded-md border border-lava-light/50 px-3 py-[5px] text-[0.8rem] font-bold text-lava-light transition-colors group-hover:border-lava-light">
                     {service.price}
                   </span>
                 </div>

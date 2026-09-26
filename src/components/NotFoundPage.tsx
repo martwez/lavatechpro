@@ -20,7 +20,7 @@ export default function NotFoundPage() {
             <a
               key={link.href}
               href={link.href}
-              className="inline-block rounded-lg border-[3px] border-border bg-ink px-[22px] py-[12px] text-[0.95rem] font-bold text-text transition-colors hover:border-lava-light hover:text-lava-light"
+              className="inline-block rounded-lg border-2 border-border bg-ink px-[22px] py-[12px] text-[0.95rem] font-bold text-text transition-colors hover:border-lava-light hover:text-lava-light"
             >
               {link.label}
             </a>

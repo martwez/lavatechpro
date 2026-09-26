@@ -40,19 +40,19 @@ export default function ServiceArea() {
           </Reveal>
           <Reveal delay={100}>
             <img
-              src="/images/service-map.png"
+              src="/images/service-map.webp"
               alt="Map of the LavaTech Pro 30-mile service area around Lava Hot Springs, covering Inkom, McCammon, Robin, Arimo, Downey, Bancroft, Grace, and Soda Springs"
-              className="aspect-[3/2] w-full rounded-xl border-[3px] border-border object-contain"
+              className="aspect-[3/2] w-full rounded-xl border-2 border-border object-contain"
             />
           </Reveal>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 rounded-xl border-[3px] border-mineral bg-card-light min-[701px]:grid-cols-3">
+        <div className="mt-14 grid grid-cols-1 rounded-xl border-2 border-mineral bg-card-light min-[701px]:grid-cols-3">
           {facts.map((fact, i) => (
             <Reveal
               key={fact.title}
               delay={150 + i * 80}
-              className={`px-7 py-8 ${i > 0 ? 'border-t-[3px] border-mineral min-[701px]:border-l-[3px] min-[701px]:border-t-0' : ''}`}
+              className={`px-7 py-8 ${i > 0 ? 'border-t-2 border-mineral min-[701px]:border-l-2 min-[701px]:border-t-0' : ''}`}
             >
               <div className={`mb-1 text-[2.4rem] font-extrabold leading-none tabular-nums ${fact.color}`}>{fact.stat}</div>
               <h3 className="mb-2 text-[0.95rem] font-bold">{fact.title}</h3>

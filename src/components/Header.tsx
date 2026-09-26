@@ -49,7 +49,7 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-[rgba(28,26,23,0.9)] backdrop-blur-[6px] border-b-[3px] border-border transition-shadow duration-300 ${
+      className={`sticky top-0 z-50 bg-[rgba(20,27,31,0.9)] backdrop-blur-[6px] border-b-2 border-border transition-shadow duration-300 ${
         scrolled ? 'shadow-[0_1px_12px_rgba(0,0,0,0.35)]' : ''
       }`}
     >
@@ -84,7 +84,7 @@ export default function Header() {
                 </svg>
               </button>
               {servicesOpen && (
-                <div className="absolute left-1/2 top-full mt-3 w-56 -translate-x-1/2 rounded-xl border-[3px] border-border bg-card-light p-2 shadow-[0_12px_30px_rgba(0,0,0,0.45)]">
+                <div className="absolute left-1/2 top-full mt-3 w-56 -translate-x-1/2 rounded-xl border-2 border-border bg-card-light p-2 shadow-[0_12px_30px_rgba(0,0,0,0.45)]">
                   {serviceLinks.map((link) => (
                     <a
                       key={link.href}
@@ -130,7 +130,7 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="min-[701px]:hidden border-t-[3px] border-border bg-bg px-6 py-4 animate-[menu-in_0.25s_ease-out_both]">
+        <div className="min-[701px]:hidden border-t-2 border-border bg-bg px-6 py-4 animate-[menu-in_0.25s_ease-out_both]">
           <ul className="flex flex-col gap-4">
             <li>
               <button
@@ -156,7 +156,7 @@ export default function Header() {
                 </svg>
               </button>
               {mobileServicesOpen && (
-                <ul className="mt-3 flex flex-col gap-3 border-l-[3px] border-border pl-4">
+                <ul className="mt-3 flex flex-col gap-3 border-l-2 border-border pl-4">
                   {serviceLinks.map((link) => (
                     <li key={link.href}>
                       <a

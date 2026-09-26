@@ -71,9 +71,9 @@ export default function PcHelpPage() {
               delay={i * 80}
               className={`flex flex-col gap-7 py-10 min-[701px]:items-center min-[701px]:gap-12 min-[701px]:py-12 min-[701px]:flex-row ${
                 i % 2 === 1 ? 'min-[701px]:flex-row-reverse' : ''
-              } ${i > 0 ? 'border-t-[3px] border-border' : ''}`}
+              } ${i > 0 ? 'border-t-2 border-border' : ''}`}
             >
-              <div className="flex aspect-[4/3] w-full shrink-0 items-center justify-center overflow-hidden rounded-xl border-[3px] border-border bg-card-light text-lava-light min-[701px]:w-[320px]">
+              <div className="flex aspect-[4/3] w-full shrink-0 items-center justify-center overflow-hidden rounded-xl border-2 border-border bg-card-light text-lava-light min-[701px]:w-[320px]">
                 <feature.Icon className="h-20 w-20" />
               </div>
               <div className="flex-1">
@@ -95,10 +95,10 @@ export default function PcHelpPage() {
           ))}
         </div>
 
-        <div className="mt-14 grid max-w-[1100px] grid-cols-1 gap-8 border-t-[3px] border-border pt-10 min-[701px]:grid-cols-3">
+        <div className="mt-14 grid max-w-[1100px] grid-cols-1 gap-8 border-t-2 border-border pt-10 min-[701px]:grid-cols-3">
           {steps.map((step, i) => (
             <div key={step.title} className="flex items-start gap-4">
-              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-[3px] border-mineral text-[0.9rem] font-bold text-mineral">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-mineral text-[0.9rem] font-bold text-mineral">
                 {i + 1}
               </span>
               <div>

@@ -201,7 +201,7 @@ export default function WebsiteDesignPage() {
           <div className="grid grid-cols-1 gap-8 min-[701px]:grid-cols-3">
             {steps.map((step, i) => (
               <Reveal key={step.title} delay={i * 80} className="flex items-start gap-4">
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-[3px] border-mineral text-[0.9rem] font-bold text-mineral">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-mineral text-[0.9rem] font-bold text-mineral">
                   {i + 1}
                 </span>
                 <div>

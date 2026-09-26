@@ -8,9 +8,9 @@ export default function About() {
       <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[0.85fr_1.15fr]">
         <Reveal>
           <img
-            src="/images/about-me.jpg"
+            src="/images/about-me.webp"
             alt="Me, out in the hills near Lava Hot Springs"
-            className="aspect-[4/5] w-full rounded-xl border-[3px] border-border object-cover"
+            className="aspect-[4/5] w-full rounded-xl border-2 border-border object-cover"
           />
         </Reveal>
         <Reveal delay={100}>

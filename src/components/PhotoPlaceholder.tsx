@@ -7,7 +7,7 @@ export default function PhotoPlaceholder({
 }) {
   return (
     <div
-      className={`flex flex-col items-center justify-center gap-2 rounded-xl border-[3px] border-dashed border-border bg-bg-alt px-4 py-8 text-center text-text-dim ${className}`}
+      className={`flex flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-border bg-bg-alt px-4 py-8 text-center text-text-dim ${className}`}
     >
       <span className="text-[1.5rem]" aria-hidden="true">
         📷

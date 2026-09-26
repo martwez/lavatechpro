@@ -43,7 +43,7 @@ export default function Contact() {
   return (
     <section id="contact" className="scroll-mt-[85px] px-5 py-16 min-[701px]:px-6 min-[701px]:py-24">
       <div className="max-w-[1100px] mx-auto px-6">
-        <Reveal className="mx-auto max-w-[650px] rounded-2xl border-[3px] border-border-light bg-card-light px-[26px] py-10 text-center min-[701px]:p-[52px]">
+        <Reveal className="mx-auto max-w-[650px] rounded-2xl border-2 border-border-light bg-card-light px-[26px] py-10 text-center min-[701px]:p-[52px]">
           <h2 className="mb-4 text-[1.8rem] font-extrabold">Let's get it fixed</h2>
           <p className="mb-8 text-text-dim-light">
             Reach out however's easiest, I'll get back to you soon.
@@ -51,7 +51,7 @@ export default function Contact() {
           <div className="mb-2 flex flex-wrap justify-center gap-[14px]">
             <a
               href="tel:2084171081"
-              className="min-w-[180px] rounded-lg border-[3px] border-border-light bg-bg px-[22px] py-[14px] text-[0.95rem] font-semibold transition-colors hover:border-lava-light"
+              className="min-w-[180px] rounded-lg border-2 border-border-light bg-bg px-[22px] py-[14px] text-[0.95rem] font-semibold transition-colors hover:border-lava-light"
             >
               <span className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
                 Call / Text
@@ -60,7 +60,7 @@ export default function Contact() {
             </a>
             <a
               href="mailto:lavatechpro@gmail.com"
-              className="min-w-[180px] rounded-lg border-[3px] border-border-light bg-bg px-[22px] py-[14px] text-[0.95rem] font-semibold transition-colors hover:border-lava-light"
+              className="min-w-[180px] rounded-lg border-2 border-border-light bg-bg px-[22px] py-[14px] text-[0.95rem] font-semibold transition-colors hover:border-lava-light"
             >
               <span className="mb-1 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
                 Email
@@ -76,7 +76,7 @@ export default function Contact() {
           </div>
 
           {status === 'sent' ? (
-            <p className="rounded-lg border-[3px] border-lava bg-bg px-[22px] py-[18px] text-[0.95rem] font-semibold text-lava-light">
+            <p className="rounded-lg border-2 border-lava bg-bg px-[22px] py-[18px] text-[0.95rem] font-semibold text-lava-light">
               Got it, thanks! I'll get back to you soon.
             </p>
           ) : (
@@ -97,7 +97,7 @@ export default function Contact() {
                   name="Name"
                   placeholder="Your name"
                   required
-                  className="w-full rounded-lg border-[3px] border-border-light bg-bg px-[18px] py-[14px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
+                  className="w-full rounded-lg border-2 border-border-light bg-bg px-[18px] py-[14px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
                 />
               </div>
               <div className="grid grid-cols-1 gap-5 min-[701px]:grid-cols-2">
@@ -112,7 +112,7 @@ export default function Contact() {
                     name="Email"
                     placeholder="john.doe@gmail.com"
                     onChange={syncReachValidity}
-                    className="w-full rounded-lg border-[3px] border-border-light bg-bg px-[18px] py-[14px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
+                    className="w-full rounded-lg border-2 border-border-light bg-bg px-[18px] py-[14px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
                   />
                 </div>
                 <div>
@@ -128,7 +128,7 @@ export default function Contact() {
                     pattern="\+?1?[ .\-]?\(?\d{3}\)?[ .\-]?\d{3}[ .\-]?\d{4}"
                     title="Enter a valid 10-digit phone number"
                     onChange={syncReachValidity}
-                    className="w-full rounded-lg border-[3px] border-border-light bg-bg px-[18px] py-[14px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
+                    className="w-full rounded-lg border-2 border-border-light bg-bg px-[18px] py-[14px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
                   />
                 </div>
               </div>
@@ -141,7 +141,7 @@ export default function Contact() {
                   name="Service"
                   defaultValue=""
                   required
-                  className="w-full rounded-lg border-[3px] border-border-light bg-bg px-[18px] py-[14px] text-[0.95rem] text-text focus:border-mineral focus:outline-none"
+                  className="w-full rounded-lg border-2 border-border-light bg-bg px-[18px] py-[14px] text-[0.95rem] text-text focus:border-mineral focus:outline-none"
                 >
                   <option value="" disabled>
                     What do you need help with?
@@ -163,7 +163,7 @@ export default function Contact() {
                   placeholder="What's going on? Any details help."
                   rows={4}
                   required
-                  className="w-full resize-none rounded-lg border-[3px] border-border-light bg-bg px-[18px] py-[14px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
+                  className="w-full resize-none rounded-lg border-2 border-border-light bg-bg px-[18px] py-[14px] text-[0.95rem] text-text placeholder:text-text-dim focus:border-mineral focus:outline-none"
                 />
               </div>
 
