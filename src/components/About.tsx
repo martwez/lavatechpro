@@ -10,11 +10,11 @@ export default function About() {
           <figure>
             <img
               src="/images/about-me.webp"
-              alt="Me and my wife"
+              alt="My wife and I"
               className="aspect-[4/5] w-full rounded-xl border-2 border-border object-cover"
             />
             <figcaption className="mt-3 text-center text-[0.85rem] text-text-dim">
-              Me and my wife
+              My wife and I
             </figcaption>
           </figure>
         </Reveal>
