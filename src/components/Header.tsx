@@ -112,7 +112,7 @@ export default function Header() {
         </nav>
 
         <a
-          href="#contact"
+          href="/#contact"
           className="hidden min-[701px]:inline-block rounded-md bg-ember px-[18px] py-[10px] text-[0.9rem] font-bold text-ink transition-all hover:brightness-110"
         >
           Reach Out
@@ -187,7 +187,7 @@ export default function Header() {
             ))}
             <li>
               <a
-                href="#contact"
+                href="/#contact"
                 onClick={() => setMenuOpen(false)}
                 className="inline-block rounded-md bg-ember px-[18px] py-[10px] text-[0.9rem] font-bold text-ink hover:brightness-110"
               >

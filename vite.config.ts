@@ -17,6 +17,8 @@ export default defineConfig({
         phoneHelp: resolve(import.meta.dirname, 'phone-help/index.html'),
         starlink: resolve(import.meta.dirname, 'starlink/index.html'),
         printer3d: resolve(import.meta.dirname, '3d-printing/index.html'),
+        privacy: resolve(import.meta.dirname, 'privacy/index.html'),
+        notFound: resolve(import.meta.dirname, '404.html'),
       },
     },
   },

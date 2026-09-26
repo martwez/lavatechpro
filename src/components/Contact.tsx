@@ -84,6 +84,8 @@ export default function Contact() {
               <input type="hidden" name="_subject" value="New request from LavaTech Pro site" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_captcha" value="true" />
+              {/* Honeypot: hidden from people, bots fill it in and FormSubmit drops the submission. */}
+              <input type="text" name="_honey" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
 
               <div>
                 <label htmlFor="contact-name" className="mb-2 block text-[0.78rem] font-bold uppercase tracking-[1px] text-lava-light">
