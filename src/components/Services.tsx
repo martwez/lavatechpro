@@ -56,7 +56,7 @@ export default function Services() {
           </span>
           <h2 className="mb-4 text-[2rem] font-extrabold">Services</h2>
           <p className="text-[1.05rem] text-text-dim">
-            Straightforward tech help, priced fairly. Every job starts with a quick conversation. I won't book anything until you know what it'll cost. Click on any service card to learn more.
+            Straightforward tech help, priced fairly. Every job starts with a quick conversation. I won't book anything until you know what it'll cost.
           </p>
         </div>
 
@@ -77,9 +77,17 @@ export default function Services() {
                 <div className="flex h-full flex-col p-5">
                   <h3 className="mb-1 text-[1.05rem] font-bold">{service.title}</h3>
                   <p className="mb-4 text-[0.85rem] text-text-dim-light">{service.description}</p>
-                  <span className="mt-auto inline-block w-fit rounded-md border border-lava-light/50 px-3 py-[5px] text-[0.8rem] font-bold text-lava-light transition-colors group-hover:border-lava-light">
-                    {service.price}
-                  </span>
+                  <div className="mt-auto flex items-center justify-between gap-3">
+                    <span className="inline-block w-fit rounded-md border border-lava-light/50 px-3 py-[5px] text-[0.8rem] font-bold text-lava-light transition-colors group-hover:border-lava-light">
+                      {service.price}
+                    </span>
+                    <span className="text-[0.85rem] font-semibold text-text transition-colors group-hover:text-lava-light">
+                      Learn more{' '}
+                      <span aria-hidden="true" className="inline-block transition-transform group-hover:translate-x-1">
+                        →
+                      </span>
+                    </span>
+                  </div>
                 </div>
               </a>
             </Reveal>

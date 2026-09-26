@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 
-const serviceLinks = [
+export const serviceLinks = [
   { href: '/pc-help/', label: 'Computer & Network Assistance' },
   { href: '/phone-help/', label: 'Mobile Device Assistance' },
   { href: '/starlink/', label: 'Starlink' },
