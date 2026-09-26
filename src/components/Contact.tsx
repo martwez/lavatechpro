@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react'
 import Reveal from './Reveal'
+import { serviceLinks } from './Header'
 
 const FORM_ENDPOINT = 'https://formsubmit.co/ajax/lavatechpro@gmail.com'
 
-const serviceOptions = ['Computer & Network Assistance', 'Starlink Setup', 'Security Cameras', 'Website Building', '3D Printing', 'Other']
+// Same labels as the header's Services menu, so the dropdown stays in sync when a service is added or renamed.
+const serviceOptions = [...serviceLinks.map((link) => link.label), 'Other']
 
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 

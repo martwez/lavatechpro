@@ -32,7 +32,7 @@ const services = [
   },
   {
     slug: 'website-design',
-    title: 'Website Building',
+    title: 'Website Design',
     description: 'Clean, simple websites for local businesses, up to 5 pages. Fast turnaround.',
     price: 'Starting at $500',
     image: '/images/website-design.webp',
