@@ -7,11 +7,16 @@ export default function About() {
     <section id="about" className="scroll-mt-[85px] bg-bg-alt px-5 py-16 min-[701px]:px-6 min-[701px]:py-24">
       <div className="mx-auto grid max-w-[1100px] grid-cols-1 items-center gap-[50px] px-6 min-[801px]:grid-cols-[0.85fr_1.15fr]">
         <Reveal>
-          <img
-            src="/images/about-me.webp"
-            alt="Me, out in the hills near Lava Hot Springs"
-            className="aspect-[4/5] w-full rounded-xl border-2 border-border object-cover"
-          />
+          <figure>
+            <img
+              src="/images/about-me.webp"
+              alt="Me and my wife"
+              className="aspect-[4/5] w-full rounded-xl border-2 border-border object-cover"
+            />
+            <figcaption className="mt-3 text-center text-[0.85rem] text-text-dim">
+              Me and my wife
+            </figcaption>
+          </figure>
         </Reveal>
         <Reveal delay={100}>
           <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
