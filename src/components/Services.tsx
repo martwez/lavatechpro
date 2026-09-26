@@ -54,7 +54,7 @@ export default function Services() {
           <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             What I Do
           </span>
-          <h2 className="mb-4 text-[2rem] font-extrabold">Services</h2>
+          <h2 className="mb-4 text-[2rem] font-bold">Services</h2>
           <p className="text-[1.05rem] text-text-dim">
             Straightforward tech help, priced fairly. Every job starts with a quick conversation. I won't book anything until you know what it'll cost.
           </p>

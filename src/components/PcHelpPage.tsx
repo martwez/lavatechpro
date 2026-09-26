@@ -57,7 +57,7 @@ export default function PcHelpPage() {
           <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             Computer Repair & Support
           </span>
-          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">Computer & Network Assistance</h1>
+          <h1 className="mb-4 text-[2rem] font-bold min-[701px]:text-[2.3rem]">Computer & Network Assistance</h1>
           <p className="text-[1.05rem] text-text-dim">
             Repair, setup, and tutoring for the everyday tech problems that pile up. No jargon, no upselling,
             just getting it working and making sure you understand it.

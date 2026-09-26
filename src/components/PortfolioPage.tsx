@@ -51,7 +51,7 @@ export default function PortfolioPage() {
           <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             Recent Work
           </span>
-          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">Portfolio</h1>
+          <h1 className="mb-4 text-[2rem] font-bold min-[701px]:text-[2.3rem]">Portfolio</h1>
           <p className="text-[1.05rem] text-text-dim">
             A few examples of finished work. More photos and write-ups from camera installs and other jobs are coming soon.
           </p>

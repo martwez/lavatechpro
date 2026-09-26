@@ -31,7 +31,7 @@ export default function ServiceArea() {
             <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
               Service Area
             </span>
-            <h2 className="mb-4 text-[2rem] font-extrabold">
+            <h2 className="mb-4 text-[2rem] font-bold">
               Coverage &amp; Availability
             </h2>
             <p className="mb-4 text-text-dim">
@@ -54,7 +54,7 @@ export default function ServiceArea() {
               delay={150 + i * 80}
               className={`px-7 py-8 ${i > 0 ? 'border-t-2 border-mineral min-[701px]:border-l-2 min-[701px]:border-t-0' : ''}`}
             >
-              <div className={`mb-1 text-[2.4rem] font-extrabold leading-none tabular-nums ${fact.color}`}>{fact.stat}</div>
+              <div className={`mb-1 font-heading text-[2.4rem] font-bold leading-none tabular-nums ${fact.color}`}>{fact.stat}</div>
               <h3 className="mb-2 text-[0.95rem] font-bold">{fact.title}</h3>
               <p className="text-[0.85rem] text-text-dim-light">{fact.detail}</p>
             </Reveal>

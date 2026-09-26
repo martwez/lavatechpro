@@ -46,7 +46,7 @@ export default function PrivacyPage() {
           <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             Privacy Policy
           </span>
-          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">Your info stays with me</h1>
+          <h1 className="mb-4 text-[2rem] font-bold min-[701px]:text-[2.3rem]">Your info stays with me</h1>
           <p className="text-[1.05rem] text-text-dim">
             LavaTech Pro is a one-person business. Here's plainly what happens to the info you send through this site.
           </p>

@@ -59,7 +59,7 @@ export default function SecurityPage() {
           <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             Cameras &amp; Home Security
           </span>
-          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">Security &amp; Camera Systems</h1>
+          <h1 className="mb-4 text-[2rem] font-bold min-[701px]:text-[2.3rem]">Security &amp; Camera Systems</h1>
           <p className="text-[1.05rem] text-text-dim">
             From a single camera over the garage to a full multi-building setup, I design the system around your
             property, not a prepackaged kit. Here's everything that falls under that.

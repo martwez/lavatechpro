@@ -17,7 +17,7 @@ export default function About() {
           <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             About Me
           </span>
-          <h2 className="mb-4 text-[2rem] font-extrabold">The go-to IT guy</h2>
+          <h2 className="mb-4 text-[2rem] font-bold">The go-to IT guy</h2>
           <p className="mb-4 text-text-dim">
             Fixing computers, routers, and random electronics for friends and family, long before it was ever a
             job. Now I'd like to extend that same help to the rest of my community.

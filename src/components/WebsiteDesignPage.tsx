@@ -121,7 +121,7 @@ export default function WebsiteDesignPage() {
           <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             For Local Businesses
           </span>
-          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">Website Design</h1>
+          <h1 className="mb-4 text-[2rem] font-bold min-[701px]:text-[2.3rem]">Website Design</h1>
           <p className="mb-7 text-[1.05rem] text-text-dim">
             Simple, clean websites for local businesses: your name, services, contact info, and hours. Fast
             turnaround, nothing bloated.

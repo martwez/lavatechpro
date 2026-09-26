@@ -28,6 +28,7 @@ Vite + React + TypeScript + Tailwind CSS v4 (via `@tailwindcss/vite`, `@theme` b
 
 - Color palette is defined once via Tailwind `@theme` in `src/index.css` (`--color-bg`, `--color-lava`, `--color-lava-light`, etc., exposed as utilities like `bg-lava`, `text-lava-light`) — the "Hot Springs" theme (sage/teal background, blue+teal accents). Reuse these utilities rather than hardcoding colors.
 - Many spacing/font-size values use Tailwind arbitrary values (e.g. `px-[22px]`, `text-[1.15rem]`) rather than the default scale — this was a deliberate pixel-for-pixel port of the original hand-tuned CSS, not an oversight. Fine to normalize to the default scale later if it's ever redesigned.
+- Headings (`h1`–`h3`) get the Outfit display font (self-hosted via `@fontsource-variable/outfit`, no Google Fonts request) and `line-height: 1.2` from a base-layer rule in `src/index.css`; body text stays on the system font. Use `font-heading` to apply Outfit to a non-heading element (e.g. the Service Area stat numbers).
 - Mobile breakpoint is a custom `min-[701px]:` variant (matches the original CSS's `@media(max-width:700px)`), not Tailwind's default `sm`/`md`.
 - No `base` path is set in `vite.config.ts` — the site is served from a custom apex domain (`lavatechpro.com`), not a GitHub Pages project subpath.
 

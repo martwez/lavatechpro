@@ -41,7 +41,7 @@ export default function LeanServicePage({ eyebrow, title, subtitle, tiles, promo
           <span className="mb-3 block text-[0.85rem] font-bold uppercase tracking-[1.5px] text-lava-light">
             {eyebrow}
           </span>
-          <h1 className="mb-4 text-[2rem] font-extrabold min-[701px]:text-[2.3rem]">{title}</h1>
+          <h1 className="mb-4 text-[2rem] font-bold min-[701px]:text-[2.3rem]">{title}</h1>
           <p className="text-[1.05rem] text-text-dim">{subtitle}</p>
         </Reveal>
 
